@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+  }
+  .logoImg {
+    width: 80%;
+    height: 150px;
+    margin-left: 25px;
+  }
+  #logoDiv {
+    width: 30%;
+    height: 150px;
+    padding: 10px;
+    margin: auto;
+  }
+  #conatiner {
+      margin-top: -50px;
+    width: 100%;
+    height: 470px;
+  }
+  #formDiv {
+    width: 31%;
+    height: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+    font-weight: bold;
+    margin: auto;
+   
+  }
+  #formDiv > input,
+  #btn-signIn {
+    height: 30px;
+    width: 98%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    
+  }
+  #btn-signIn {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: rgb(237, 28, 36);
+    color: white;
+    border: 0;
+  }
+  #signupDiv {
+
+    width: 31%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px;
+    align-items: center;
+    color: grey;
+  }
+  #btn-signUp {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: rgb(237, 28, 36);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+  }
+  #btn-signUp:hover,
+  #btn-signIn:hover {
+    background-color: rgb(177, 18, 23);
+  }
+  input:focus {
+    outline: none;
+    border-color: rgb(237, 28, 36);
+    box-shadow: 0 0 10px rgb(237, 28, 36);
+  }
