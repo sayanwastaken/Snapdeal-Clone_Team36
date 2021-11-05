@@ -9,7 +9,10 @@
     <link rel="shortcut icon" href="resource/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <!-- this code is for nav bar -->
+    <!------------------------------------- this code is for nav bar------ =========================-->
+
+
+
     <div id="navBar">
       <div id="firstDiv">
         <div id="firstCornerdiv">
@@ -62,7 +65,12 @@
             </div>
           </div>
           <div id="signIN">
-            <div>Sign In</div>
+            <div id="signbtn">Sign In</div>
+            <div id="signIncont">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
             <div id="imageSinIn">
               <img
                 width="50%"
@@ -74,7 +82,7 @@
         </div>
       </div>
     </div>
-    <!-- abaove code is for nav bar -->
+    <!-- abaove code is for nav bar------------------------------------ -->
     <div id="container">
       <div id="sideNav">
         <p>TOP CATEGORIES</p>
@@ -96,7 +104,14 @@
       </div>
       <div id="upperBody">
         <div id="upperImg">
-          <div id="uppperImgdiv"></div>
+          <div id="uppperImgdiv">
+            <div id="imagecontainer"></div>
+            <!-- <div id="imagebtn" style="display: inline-block;">
+              <img id="rightbtn" style="margin-left: 800px; margin-top: 150px; display: inline-block;" height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/318/318476.png" alt="">
+              <img id="leftbtn" style="margin-top: 0px;"  height="30px" width="30px" src="https://cdn-icons.flaticon.com/png/128/2609/premium/2609370.png?token=exp=1636109733~hmac=58f3f3f9bc09acedb060fe06644c8b16" alt="">
+            </div> -->
+            
+          </div>
           <div id="imagebottom">
             <div class="imageBottomText">Snapdeal</div>
             <div class="imageBottomText">Download Our App</div>
@@ -116,10 +131,15 @@
               Enter your pincode to check the availability and faster delivery
             </p>
           </div>
-          <div id="inputDiv">
-            <input type="number" placeholder="Enter pincode" />
+          <div id="input-container">
+            <div id="number">
+              <input type="number" id="inputPin" placeholder="Enter pincode" />
+              <p id="pintext" style="margin-top: 0px; color: red"></p>
+            </div>
+            <p id="value"></p>
           </div>
           <div id="pincodeBtn">
+           
             <button id="SubmitBtn">Submit</button>
             <button id="NextBtn">
               <span>Next</span>
@@ -131,3 +151,5 @@
     </div>
   </body>
 </html>
+
+<script src="product.js"></script>
