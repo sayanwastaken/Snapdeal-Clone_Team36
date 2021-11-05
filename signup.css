@@ -2,11 +2,12 @@ body{
     display: flex;
     align-items: center;
   flex-direction: column;
+  font-family: sans-serif;
 }
 #head{
    width: 150px;
    height: 100px;
-   margin-right: 200px ;
+   margin-right: 200px;
 
 }
 .logoImg{
@@ -14,42 +15,51 @@ body{
     height: 150px;
     
 }
-h4{
-    font-size:30px;
-    margin-left: 25px;
-    color: rgb(202, 25, 84);
+h5{
+    margin-left: 25px ;
+    margin-top: 10px;
+    color: grey;
+    margin-right: 15px;
+
 }
 p{
-   
+   font-weight: bold;
     margin-left: 25px;
 }
 #container{
-   
-    width: 350px;
-    height:550px ;
+    width: 450px;
+    height:580px;
     margin-top: 50px;  
     display: flex;
     flex-direction: column;
      align-items: flex-start;  
      vertical-align: top;
-     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-  rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .inp{
-    height: 25px;
-    border-radius: 3px;
-    width: 290px;
-    border: 1px solid ;
+    height: 38px;
+    border-radius: 5px;
+    width: 380px;
+    border: 1px solid grey;
     margin-left: 25px;
-    vertical-align: top;
-   
+    vertical-align: top; 
+    outline: 0; 
+}
+h1{
+    color:#a71111 ;
 }
 button{
-    height: 30px;
+    height: 42px;
     color: white;
-    width: 300px;
+    padding: 10px;
+    width: 388px;
     margin-top: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-left: 25px;
-    background-color:hsl(0, 100%, 45%) ;
+    background-color:#EB0000;
+    border: 1px solid #EB0000;
+}
+.inp:focus{
+    border-color: rgb(237, 28, 36);
+    box-shadow: 0 0 10px rgb(237, 28, 36);
+
 }
