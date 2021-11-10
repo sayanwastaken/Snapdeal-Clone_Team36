@@ -3,6 +3,7 @@ var emailVal = document.querySelector("#email");
 var pass = document.querySelector("#password");
 var mailError = document.querySelector("#mailerror");
 var passError = document.querySelector("#passerror");
+
 function validEmail(email) {
   var flag = 1;
   for (let i = 0; i < emailVal.value.length; i++) {
@@ -34,16 +35,20 @@ document.querySelector("#btn-signIn").addEventListener("click", () => {
     passerror.innerHTML = "password must be of 6 digits or more";
     pass.style.border = "1px solid red";
   }
-  var flag=1;
-  for(let i=0;i<userArr.length;i++){
-    if(emailVal.value==userArr[i].emOrmobile&&pass.value==userArr[i].pass){
+  var flag = 1;
+  for (let i = 0; i < userArr.length; i++) {
+    if (
+      emailVal.value == userArr[i].emOrmobile &&
+      pass.value == userArr[i].pass
+    ) {
       flag = 0;
+      localStorage.setItem("Loguser", JSON.stringify(emailVal.value));
       alert("Login successful!");
-      window.location.href="productPage.html";
+      window.location.href = "productPage.html";
       break;
+    }
   }
-  }
-  if(flag==1){
+  if (flag == 1) {
     alert("Login failed! user does not exist please try again");
   }
 });
