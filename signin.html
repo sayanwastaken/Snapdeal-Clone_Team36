@@ -6,29 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In Page</title>
     <link rel="shortcut icon" href="resource/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="signin.css" />
   </head>
   <body>
     <div id="logoDiv">
-      <a
-        href="https://findvectorlogo.com/snapdeal-vector-logo-svg/"
-        target="_blank"
-        ><img
-          src="https://findvectorlogo.com/wp-content/uploads/2019/03/snapdeal-vector-logo.png"
-          class="logoImg"
-      /></a>
+      <img
+        src="https://findvectorlogo.com/wp-content/uploads/2019/03/snapdeal-vector-logo.png"
+        class="logoImg"
+      />
     </div>
     <div id="conatiner">
       <div id="formDiv">
         <label for=""> Enter your email address. </label>
         <input type="email" id="email" placeholder="Enter your email" />
+        <p id="mailerror" style="margin-top: 0px; color: red"></p>
         <label for=""> Enter your Password. </label>
-        <input
-          type="password"
-          id="password"
-          id="email"
-          placeholder="Enter Password"
-        />
+        <input type="password" id="password" placeholder="Enter Password" />
+        <p id="passerror" style="margin-top: 0px; color: red"></p>
         <button id="btn-signIn">Sign In</button>
       </div>
       <div id="signupDiv">
@@ -40,3 +34,4 @@
     </div>
   </body>
 </html>
+<script src="signin.js"></script>
