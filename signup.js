@@ -1,4 +1,4 @@
-document.querySelector("button").addEventListener("click",signup);
+document.querySelector("#btn-signup").addEventListener("click",signup);
 var userArr= JSON.parse(localStorage.getItem("UserData1")) || [];
 function signup(){
     var name=document.getElementById("name").value;
@@ -30,12 +30,12 @@ function signup(){
         document.getElementById("pass").style.borderColor="grey";
     }
     if(repass==pass){
-       var usreList={
+       var userList={
            name:name,
            emOrmobile:emOrmobile,
            pass:pass,
         };
-       userArr.push(usreList);
+       userArr.push(userList);
        localStorage.setItem("UserData1",JSON.stringify(userArr));
        window.location.href="signin.html";
     }
@@ -43,25 +43,26 @@ function signup(){
         document.getElementById("repass").style.borderColor="red";
         alert("Re-enter password must be same.")
     }
+    window.location.href="signin.html";
 }
-document.getElementById("btn").addEventListener("click",signin);
-function signin(){
+document.getElementById("btn-signin").addEventListener("click",signIn);
+function signIn(){
    window.location.href="signin.html";
 }
 //****mouseenter and mouseleave effect****//
-document.querySelector("button").addEventListener("mouseenter",enterButton);
+document.querySelector("#btn-signup").addEventListener("mouseenter",enterButton);
 function enterButton(){
-    document.querySelector("button").style.backgroundColor="#a71111";
+    document.querySelector("#btn-signup").style.backgroundColor="#a71111";
 }
-document.querySelector("button").addEventListener("mouseleave",leaveButton);
+document.querySelector("#btn-signup").addEventListener("mouseleave",leaveButton);
 function leaveButton(){
-    document.querySelector("button").style.backgroundColor="#EB0000";
+    document.querySelector("#btn-signup").style.backgroundColor="#EB0000";
 }
-document.getElementById("btn").addEventListener("mouseenter",enterButton2);
+document.getElementById("btn-signin").addEventListener("mouseenter",enterButton2);
 function enterButton2(){
-    document.getElementById("btn").style.backgroundColor="#a71111";
+    document.getElementById("btn-signin").style.backgroundColor="#a71111";
 }
-document.getElementById("btn").addEventListener("mouseleave",leaveButton2);
+document.getElementById("btn-signin").addEventListener("mouseleave",leaveButton2);
 function leaveButton2(){
-    document.getElementById("btn").style.backgroundColor="#EB0000";
+    document.getElementById("btn-signin").style.backgroundColor="#EB0000";
 }
