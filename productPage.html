@@ -11,8 +11,6 @@
   <body>
     <!------------------------------------- this code is for nav bar------ =========================-->
 
-
-
     <div id="navBar">
       <div id="firstDiv">
         <div id="firstCornerdiv">
@@ -64,21 +62,33 @@
               />
             </div>
           </div>
-          <div id="signIN">
-            <div id="signbtn">Sign In</div>
-            <div id="signIncont">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+          <div class="signIN">
+            <div class="dropdown">
+              <div class="signbtn">Sign In
+              
+                <img  id="imageSinIn"
+                
+                src="https://cdn-icons.flaticon.com/png/512/666/premium/666201.png?token=exp=1635796006~hmac=fead5a874b251aca542ac69cc7ed9d17"
+                alt=""
+              />
+              
+              </div>
+              <div class="dropdown_menu">
+                <!-- <div class="dropdownCont"> -->
+                  dropdown content
+                </div>
+              </div>
             </div>
+            
+          
 
-            <div id="imageSinIn">
+            <!-- <div id="imageSinIn">
               <img
                 width="50%"
                 src="https://cdn-icons.flaticon.com/png/512/666/premium/666201.png?token=exp=1635796006~hmac=fead5a874b251aca542ac69cc7ed9d17"
                 alt=""
               />
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -107,21 +117,54 @@
       </div>
       <div id="upperBody">
         <div id="upperImg">
-          <div id="uppperImgdiv">
-            <div id="imagecontainer"></div>
-            <!-- <div id="imagebtn" style="display: inline-block;">
-              <img id="rightbtn" style="margin-left: 800px; margin-top: 150px; display: inline-block;" height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/318/318476.png" alt="">
-              <img id="leftbtn" style="margin-top: 0px;"  height="30px" width="30px" src="https://cdn-icons.flaticon.com/png/128/2609/premium/2609370.png?token=exp=1636109733~hmac=58f3f3f9bc09acedb060fe06644c8b16" alt="">
-            </div> -->
-            
+          <div id="Slide_container">
+            <div class="slide">
+              <img
+                class="slider_img"
+                src="https://media.istockphoto.com/photos/totally-free-full-length-of-handsome-young-man-keeping-arms-while-picture-id1157131733?k=20&m=1157131733&s=612x612&w=0&h=utZ5327CRMN6amf_XZ6PDMukWeQSuUb1lfTp_4uO2gM="
+                alt=""
+              />
+            </div>
+
+            <div class="slide">
+              <img id="image1" class="slider_img" src="https://media.istockphoto.com/photos/handsome-young-african-man-looking-at-camera-and-keeping-hand-on-chin-picture-id1192089195?k=20&m=1192089195&s=612x612&w=0&h=plnkOz_fjdZ6jUPZywlpP0xo0CNVRzYBGuE-itneBpk=" alt="">
+            </div>
+
+            <div class="slide">
+              <img id="image2" class="slider_img" src="https://media.istockphoto.com/photos/curiosity-young-bearded-and-handsome-man-in-casual-clothes-is-looking-picture-id1129816771?k=20&m=1129816771&s=612x612&w=0&h=UFjzIWr49G6eDXIcUIsxjhaMt9YN2iIOOo0r2BnGThk=" alt="">
+            </div>
+
+            <div class="slide">
+              <img id="image3" class="slider_img" src="https://media.istockphoto.com/photos/fulllength-portrait-of-an-asian-man-on-a-white-background-picture-id1328526567?k=20&m=1328526567&s=612x612&w=0&h=lQr-ZO-En1MfBhgaqBZMlGluus6wZJj34n1ouO1sHV8=" alt="">
+            </div>
+
+            <div class="slide">
+              <img id="image4" class="slider_img" src="https://media.istockphoto.com/photos/man-with-bright-smile-sitting-on-the-floor-picture-id698590076?k=20&m=698590076&s=612x612&w=0&h=wcd9RMT5YvTd9LB3dZV8WOi85EN28vb2Z2Ez-jwJK_0=" alt="">
+            </div>
+
+            <span class="arrow prev" onclick=" controller(-1)">&#10094;</span>
+            <span class="arrow next" onclick=" controller(1)">&#10095;</span>
           </div>
 
           <div id="imagebottom">
-            <div class="imageBottomText">Snapdeal</div>
+          <button class="imageBottomText" id="btn1"  onclick=" controller(-1)" >Snapdeal</button>
+          <button class="imageBottomText" id="btn2" onclick=" controller(-1)" >Download Our App</button>
+          <button class="imageBottomText" id="btn3"  onclick=" controller(-1)" >Diya Idols And More</button>
+          <button class="imageBottomText" id="btn4"onclick=" controller(-1)" >Cookware Collection</button>
+          <button class="imageBottomText" id="btn5"  onclick=" controller(-1)" >Fashion Jwellery</button>
+
+            <!-- <div class="imageBottomText">Snapdeal</div>
             <div class="imageBottomText">Download Our App</div>
             <div class="imageBottomText">Diya Idols And More</div>
             <div class="imageBottomText">Cookware Collection</div>
-            <div class="imageBottomText">Fashion Jwellery</div>
+            <div class="imageBottomText">Fashion Jwellery</div> -->
+          </div>
+          <div class="navigation_manual">
+            <label for="btn1" class="manual_btn"></label>
+            <label for="btn2" class="manual_btn"></label>
+            <label for="btn3" class="manual_btn"></label>
+            <label for="btn4" class="manual_btn"></label>
+            <label for="btn5" class="manual_btn"></label>
           </div>
         </div>
         <div id="pincodediv">
@@ -144,16 +187,34 @@
             <p id="value"></p>
           </div>
           <div id="pincodeBtn">
-           
-
             <button id="SubmitBtn">Submit</button>
             <button id="NextBtn">
               <span>Next</span>
             </button>
           </div>
         </div>
+        
       </div>
-      <div id="lowerBoddy"></div>
+      <div id="lowerBoddy">
+        <div class="Timagebox">
+          <img   class="Timage"  src="https://n1.sdlcdn.com/imgs/i/z/e/large/Bentag-Vegetable-Fruit-Clever-Cutter-SDL841893040-1-ea5e3.jpg" alt="">
+        </div>
+        <div class="Timagebox">
+          <img  class="Timage"  src="https://n1.sdlcdn.com/imgs/i/z/e/large/Wonderchef-Plastic-Manual-Chopper-SDL629944208-1-ccc77.jpg" alt="">
+        </div>
+        <div class="Timagebox">
+          <img class="Timage"  src="https://n1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg" alt="">
+        </div>
+        <div class="Timagebox">
+          <img class="Timage"  src="https://n2.sdlcdn.com/imgs/j/o/r/large/Veirdo-100-Percent-Cotton-Green-SDL302182620-1-1ba35.jpeg" alt="">
+        </div>
+        <div class="Timagebox">
+          <img class="Timage"  src="https://n4.sdlcdn.com/imgs/j/x/8/large/Callmate-H-40-With-USB-SDL257998546-1-23845.jpeg" alt="">
+        </div>
+        <div class="Timagebox">
+          <img  class="Timage" src="https://n4.sdlcdn.com/imgs/i/z/e/large/Maxbell-USB-Rechargeable-Electronic-Flameless-SDL679184483-1-08e0f.jpg" alt="">
+        </div>
+      </div>
     </div>
   </body>
 </html>
