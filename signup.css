@@ -38,7 +38,7 @@ p{
 .inp{
     height: 38px;
     border-radius: 5px;
-    width: 380px;
+    width: 400px;
     border: 1px solid grey;
     margin-left: 25px;
     vertical-align: top; 
@@ -51,7 +51,7 @@ button{
     height: 42px;
     color: white;
     padding: 10px;
-    width: 388px;
+    width: 409px;
     margin-top: 20px;
     border-radius: 5px;
     margin-left: 25px;
