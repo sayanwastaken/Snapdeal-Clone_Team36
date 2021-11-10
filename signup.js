@@ -1,5 +1,6 @@
 document.querySelector("button").addEventListener("click",signup);
 var userArr= JSON.parse(localStorage.getItem("UserData1")) || [];
+
 function signup(){
     var name=document.getElementById("name").value;
     if(name==""){
