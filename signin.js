@@ -3,6 +3,7 @@ var emailVal = document.querySelector("#email");
 var pass = document.querySelector("#password");
 var mailError = document.querySelector("#mailerror");
 var passError = document.querySelector("#passerror");
+
 function validEmail(email) {
   var flag = 1;
   for (let i = 0; i < emailVal.value.length; i++) {
@@ -41,6 +42,7 @@ document.querySelector("#btn-signIn").addEventListener("click", () => {
       pass.value == userArr[i].pass
     ) {
       flag = 0;
+      localStorage.setItem("Loguser", JSON.stringify(emailVal.value));
       alert("Login successful!");
       window.location.href = "productPage.html";
       break;
