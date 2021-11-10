@@ -1,4 +1,6 @@
-
+body{
+    margin: 0px;
+}
 
 #navBar{
    margin-top: 0px;
@@ -111,8 +113,9 @@ outline: 0;
     margin-left: 5px;
     cursor: pointer;
 }
-#signIN{
-    display: flex;
+.signIN{
+    /* display: flex; */
+    /* align-items: baseline; */
     /* position: relative; */
     color: white;
     line-height: 75px;
@@ -121,30 +124,32 @@ outline: 0;
       
       
 }
-#signIncont{
-    
-display: none;
-position: absolute;
-background-color: #f1f1f1;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
+
+.signbtn:hover{
+   cursor: pointer;
+    color:blue;
 }
-#signIncont a{
-   background-color: black;
-   color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.dropdown{
+    position: relative;
 }
-#signIN:hover #signIncont {display: block;}
+.dropdown_menu{
+    position: absolute;
+    left: 0;
+    margin-top: -7px;
+   opacity: 0;
+    background-color: black;
+}
+.dropdown > .signbtn:focus + .dropdown_menu{
+    opacity: 1;
+}
+
 
 #imageSinIn{
-    width: 45px;
-   
-    height: 30px;
-    margin-top: 8px;
-    margin-left: 8px;
+    width: 30px;
+  /* background-color: white; */
+    height: 25px;
+    margin-bottom: -7px;
+    margin-left: 18px;
   
 }
 /* now the category adjuscent part */
@@ -176,24 +181,48 @@ grid-template-areas: "side upper upper"
     display: flex;
 
 }
-#lowerBoddy{
-grid-area: lower;
-border: 1px solid green;
-height: 220px;
-}
+
 
 #upperImg{
 border: 1px solid red;
 width: 78%;
 height: 90%;
 }
-#uppperImgdiv{
+#Slide_container{
     border: 1px solid blue;
+    position: relative;
     display: flex;
     /* display: inline; */
     height: 88%;
     width: 100%;
+   
     
+}
+.slider_img{
+    width: 181%;
+    height: 100%;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    background-color: rgba(255, 255, 255, 0.692);
+    padding: 8px 16px;
+    border-radius: 50%;
+}
+ .next{
+    right: 10px;
+    
+}
+.prev{
+    left: 10px;
+}
+.slide{
+    display: none;
+}
+.manual_btn:hover{
+text-decoration-line:underline  blue;
 }
 #imagebottom{
     border: 1px solid red;
@@ -203,11 +232,13 @@ height: 90%;
     
 }
 .imageBottomText{
-    border: 1px solid green;
+    /* border: 1px solid green; */
    margin-left: 50px;
    padding-top: 5px;
    color:#333333;
    font-weight: lighter;
+   border: none;
+   background-color: white ;
 }
 #pincodediv{
     border: 1px solid green;
@@ -230,11 +261,7 @@ height: 90%;
     background-color: #fbfbfb;
     border: grey;
 }
-/* #input-container > #inputPin{
-    height: 100%;
-    width: 100%;
-  
-} */
+
 #pincodeBtn{
     display: flex;
    color: red;
@@ -260,4 +287,22 @@ height: 90%;
     border: none;
     cursor: pointer;
 
+}
+
+#lowerBoddy{
+    grid-area: lower;
+    border: 1px solid green;
+    height: 280px;
+    display: flex;
+    }
+.Timagebox{
+height: 100%;
+width: 100%;
+border: 1px solid navy;
+margin-left: 10px;
+}
+
+.Timage{
+    width: 100%;
+    height: 80%;
 }
