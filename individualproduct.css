@@ -1,0 +1,135 @@
+ *{
+     margin: 0;
+     padding: 0;
+ }
+
+ #prod_Container{
+     width: 99%;
+     height: 800px;
+     padding: 5px;
+       border: 1px solid red;  
+     
+ }
+ .prod_head{
+     display: flex;
+ }
+ .prod_Div{
+     display: flex;
+     padding-top: 5px;
+ }
+ .prod_Img{
+       /* border: 1px solid blue;   */
+     width: 40%;
+     height: 390px;
+
+ }
+ .prod_Img img{
+     width: 75%;
+     height: 390px;
+    padding-left: 30px;
+ }
+ .prod_Text{
+       /* border: 1px solid red;    */
+    width: 58%;
+    height: 390px;
+    
+}
+.prod_Text_head{
+    display: flex;
+    padding: 10px;
+}
+.prod_Text1{
+     /* border: 1px solid red;  */
+    height: 50%;
+    height: 450px;
+    display: flex;
+}
+.prod_Text1_Left{
+    width: 56%;
+    height: 390px;
+    padding: 10px;
+     /* border: 1px solid blue;  */
+}
+.prod_Text1_Right{
+    width: 42%;
+    height: 370px;
+    /* border: 1px solid blue; */
+    padding: 5px;
+}
+
+/* ------------------------------buttton Cart--------------------------- */
+
+#M_cart{
+    width: 110px;
+    height: 40px;
+     margin-top: 200px;
+     margin-left: 20px;
+     font-size: 15px;
+    font-weight: 500;
+    background-color: #333333;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    
+}
+#M_Buy{
+    width: 110px;
+    height: 40px;
+    margin-top: 200px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #e40046;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+
+/* -----------------------prod Address--------------------------- */
+
+#prod_Address{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+.prod_search{
+    width: 40%;
+    height: 200px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 90px;
+}
+.prod_Pincode{
+    width: 58%;
+    height: 280px;
+    border: 1px solid teal;
+     
+}
+.prod_Pincode > div{
+    display: flex;
+}
+ #checkAddress{
+     display: flex;
+      margin-top: 10px; 
+      
+ }
+ #checkAddress p{
+     display: inline-block;
+ }
+ #checkAddress input{
+     width: 160px;
+     height: 30px;
+ }
+ #checkAddress button{
+    width: 120px;
+    height: 30px;
+    background-color: #333333;
+}
+ 
+#location{
+    width: 380px;
+    margin-left: 80px;
+    border: 1px solid blue;
+    vertical-align: top;
+}
+  
