@@ -92,3 +92,22 @@ function showSlides() {
   
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+
+var signName= JSON.parse(localStorage.getItem("Loguser"))||[];
+
+
+function bat(){
+  window.location.href="signin.html"
+if( document.getElementsByClassName("signbtn").value==signName){
+  document.getElementsByClassName("signbtn").textContent=""
+  document.getElementsByClassName("signbtn").textContent=signName
+}else{
+
+}
+
+  
+console.log(signName)
+  // localStorage.removeItem("Loguser")
+  
+  
+}
