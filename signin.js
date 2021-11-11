@@ -55,3 +55,8 @@ document.querySelector("#btn-signIn").addEventListener("click", () => {
     alert("Login failed! user does not exist please try again");
   }
 });
+
+
+document.getElementById("btn-signUp").addEventListener("click",()=>{
+  window.location.href="signup.html"
+})

@@ -121,6 +121,7 @@ outline: 0;
     line-height: 75px;
     margin-left: 100px;
     cursor: pointer;
+    position: relative;
       
       
 }
@@ -128,36 +129,34 @@ outline: 0;
 .signbtn:hover{
    cursor: pointer;
     color:blue;
+    
 }
-.dropdown{
-    position: relative;
+.signIN ul>li{
+    list-style: none;
+    line-height: 100px;
+    /* padding-left: 20px; */
 }
-.dropdown_menu{
+
+.signIN ul > li {
     position: absolute;
-    left: 0;
-    margin-top: -7px;
-   opacity: 0;
-    background-color: black;
-}
-.dropdown > .signbtn:focus + .dropdown_menu{
-    opacity: 1;
 }
 
 
 #imageSinIn{
-    width: 30px;
-  /* background-color: white; */
+    width: 55px;
+  /* margin-bottom: -19px; */
     height: 25px;
-    margin-bottom: -7px;
-    margin-left: 18px;
+    margin-top: -65px;
+    margin-left: 60px;
   
 }
+
 /* now the category adjuscent part */
 
 #container{
 display: grid;
 width: 100%;
-height: 625px;
+height: 925px;
 border: 1px solid blue;
 grid-template-columns: 200px ;
 grid-template-rows:200px 100px;
@@ -292,17 +291,42 @@ text-decoration-line:underline  blue;
 #lowerBoddy{
     grid-area: lower;
     border: 1px solid green;
-    height: 280px;
+    height: 470px;
     display: flex;
+    overflow-y: hidden;
+    /* white-space: nowrap; */
+    overflow-x: auto;
+    position: relative;
     }
 .Timagebox{
 height: 100%;
-width: 100%;
+min-width: 20%;
 border: 1px solid navy;
 margin-left: 10px;
+/* flex: 0 0 auto; */
+
 }
 
 .Timage{
     width: 100%;
-    height: 80%;
+    height: 70%;
+}
+.productsText{
+    width: 187px;
+    height: 180px;
+    display: block;
+    padding-left: 5px;
+    line-height: 25px;
+}
+.price{
+    display: flex;
+     padding-left: 2px;
+}
+.price button{
+    width: 60px;
+    margin-left: 6px;
+    height: 20px;
+}
+.price .cut{
+    text-decoration: line-through;
 }
