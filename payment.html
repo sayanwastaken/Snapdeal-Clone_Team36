@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment page</title>
+    <style>
+      body {
+        background-color: #eee;
+        font-family: sans-serif;
+      }
+      #navDiv {
+        width: 98%;
+        height: 80px;
+        background-color: rgb(228, 12, 70);
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 15px;
+        color: white;
+      }
+      #logoDiv,
+      #headtext {
+        width: 25%;
+        height: 70px;
+        display: flex;
+      }
+      #headtext > p {
+        font-size: 14px;
+      }
+      .logoImg {
+        color: white;
+        width: 50%;
+      }
+      #mainDiv {
+        width: 98%;
+        height: 560px;
+        margin-top: -28px;
+        margin-left: 10px;
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        border:1px  grey;
+      }
+      #payHead {
+        width: 98.7%;
+        height: 50px;
+        background-color: #333;
+        border-radius: 3px;
+        color: white;
+        padding: 5px;
+      }
+      h3 {
+        margin-top: 20px;
+        margin-left: 30px;
+      }
+      #payDiv { 
+        width: 63%;
+        height: 100%;
+        border:1px solid grey;
+      }
+      #sumDiv {
+        /* border: 1px solid red; */
+        width: 35%;
+        height: 100%;
+      }
+      #payOption{
+          height: 89%;
+          width: 30%;
+          /* border: 1px solid blue; */
+          display:flex;
+          flex-direction: column;
+          display: inline-block;
+          vertical-align: top;
+      }
+      #option{
+        display: inline-block;
+          height: 89%;
+          width: 68.6%;
+          /* border: 1px solid blue; */
+      }
+      #payOption>div{
+          width: 90%;
+          
+          height: 40px;
+         padding-top: 20px;
+         padding-left: 20px;
+         font-weight: bold;
+         color:grey;
+      }
+      #payOption>div:hover{
+          color:black;
+          border:1px solid grey;
+          border-left: 7px solid rgb(228,12,70);
+          
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navDiv">
+      <div id="logoDiv">
+        <img
+          class="logoImg"
+          src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg"
+        />
+      </div>
+      <div id="headtext">
+        <p>100% Payment Protection, Easy Returns Policy</p>
+      </div>
+    </div>
+    <div id="mainDiv">
+      <div id="payDiv">
+        <div id="payHead"><h3>1.Make Payment</h3></div>
+        <div id="payOption">
+            <div id="creditCard">Credit Card</div>
+            <div id="debitCard">Debit Card</div>
+            <div id="cash">Cash on delivery</div>
+        </div>
+        <div id="option"></div>
+      </div>
+      <div id="sumDiv"></div>
+    </div>
+  </body>
+</html>
