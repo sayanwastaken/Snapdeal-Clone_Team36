@@ -14,19 +14,45 @@ body{
           width: 100%; 
     }
     #nav2{
-      border: .1px solid grey;
-      background-color: white;
-      height: 45px;
-      width: 100%; 
-      float: left;
-      color: white;         
-   }
-      #nav1{
-          background-color: black;
-          height: 48px;
+          border-top: .00001px solid grey;
+          height: 50px;
           width: 100%; 
-          color: white; 
-          margin-top: 50px;               
+          color: grey; 
+          font-size: 15px;
+          border-radius: 3px;
+    }
+    img{
+      float: left;
+      width: 30px;
+      height: 20px;
+      margin-top: 20px;
+      margin-left: 30px;
+      border-radius: 50%;
+     
+}
+    h4{
+       float: right;
+       margin-right: 57%;
+      font-weight: 400;
+    }
+    h5{
+           float: left;
+           margin-left: 4%;
+          
+    }
+   
+      #nav1{
+          background-color: #333;
+          height: 50px;
+          width: 100%; 
+          color: white;  
+          border-radius: 3px;              
+    }
+    h3{
+      font-weight: 300;
+      margin-left: 40px;
+      padding-top: 12px;
+     
     }
     #text{
      
@@ -36,45 +62,43 @@ body{
     #im{
         height: 40%;
         width: 18%;
+        margin-top: 0px;
+        margin-left: 10px;
         padding-top: 20px;
         cursor: pointer;
     }
     #main{
-     
-      width: 93%;
+      width: 92%;
       display:flex;
-      height: 802px;
-      margin-left: 49px;
+      height: 773px;
+      margin-left: 54px;
       flex-direction: row;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);           
     }
     #left{
          width: 68%;
-         height: 725px;
+         height: 747px;
+         margin-top: 25px;
          margin-left: 30px;
-         margin-top: 30px;
-         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-         rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-         rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         /*margin-top: 30px;*/
+        
     }
     #right{
-            border: 1px solid white;
-            width: 25%;
+            float: right;
+            width: 20%;
             height: 727px;
-            margin-left: 50px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;       
     }
-    p{    
-         margin-left: 20px;
-         font-size: 15px;   
-    }
+   
     h5{
       color: grey;
     }
     #l1{
       float: left;
-     padding: 2px;
+    
       width: 20%;
       height: 75%;
       margin-left: 50px;
@@ -114,7 +138,7 @@ body{
      width: 27%;
      height: 45px;
      border: 1px solid #c7003d;
-     margin-left:1%;
+     margin-left:27%;
      color: white;
      background-color: #c7003d;
      border-radius: 3px;
@@ -124,25 +148,25 @@ body{
    }
    #navtext{
      color: white;
-    height: 50px;
-    width: 30%;
+    font-size: 14px;
+    width: 25%;
+    padding: 15px;
     float: right; 
    }
    #contain{
-    
-     width: 100%;
-     height: 804px;
+        width: 100%;
+        height: 895px;
    }
    #l2{
       float: left;
-      width: 48px;
+      width: 52px;
       height: 22px;
       background-color: #c7003d;
   }
   #r2{
       float: right;
    
-      width: 48px;
+      width: 52px;
       height: 22px;
       background-color: #c7003d;
   }
@@ -150,3 +174,32 @@ body{
          color: black;
          height: 33px;
   }
+  #reviewnav{ 
+    
+  height: 50px;
+  width: 65%; 
+  border-color: transparent;
+  color: white;  
+  border-radius: 3px;
+  margin-left: 54px; 
+  margin-top: 5px;
+  outline: none;
+  color: grey;
+  text-align: left;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);           
+}
+  #paymentnav{ 
+    height: 50px;
+    width: 65%; 
+    color: white;  
+    border-radius: 3px;
+    margin-left: 54px; 
+    margin-top: 5px;
+    outline: none;
+    color: grey;
+    text-align: left;
+    padding: 10px;
+    border-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);           
+}
