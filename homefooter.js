@@ -129,6 +129,9 @@ var p4 = document.getElementById("product_4");
 p4.style.display = "none"
 
 
+ 
+
+
 function myfun() {
     p4.style.display = "grid";
     var product = JSON.parse(localStorage.getItem("AllData"))
@@ -140,10 +143,13 @@ function myfun() {
     function displayItems(name, type, image_url, price, priceP, Offer,) {
         
         var imageDiv = document.createElement("div");
+        
 
         var img = document.createElement("img");
         img.setAttribute("src", image_url)
-        img.style.width = "90%"
+        img.style.width = "90%";
+        
+        
          
 
         var h5 = document.createElement("i");
@@ -171,6 +177,7 @@ function myfun() {
 
         var Div = document.createElement("div");
         Div.setAttribute("id", "Div")
+        
          
 
         var h2 = document.createElement("h2");
@@ -191,6 +198,7 @@ function myfun() {
 
         var h4 = document.createElement("h4");
         h4.textContent = type;
+       
 
 
 
@@ -207,13 +215,19 @@ function myfun() {
         var referenceNode = document.getElementById("empty")
         
         parent.insertBefore(imageDiv, referenceNode);
+         
         
-   
         
     }
 }
 
 
+document.getElementById("Div").addEventListener("click", Addtocart)
+ 
+  function Addtocart(){
+      console.log("yes")
+  }
+ 
  /---------------------------load more---------------------------------/
 
 
@@ -230,16 +244,14 @@ function myfun() {
  }
 
 
- document.getElementById("under").addEventListener("mouseenter", enter);
-
- function enter(){
-     document.getElementById("under").style.textDecoration = "underline"
- }
+  
 
 
 
-/---------------------pincode hide--------------------------/
+/---------------------cart--------------------------/
 
+
+ 
  
 
  
