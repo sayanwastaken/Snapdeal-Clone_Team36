@@ -11,13 +11,14 @@
             height: 400px;
            
             margin: auto;
-            overflow: scroll;
+            overflow:scroll;
             flex-wrap: wrap;
+            color: gray;
         }
        
         
         thead{
-            background-color: rgb(240, 222, 222);
+            background-color:rgb(247,247,247);
            
         }
        .td{
@@ -30,8 +31,7 @@
        
           #maindiv{
               display: flex;
-              /* flex-direction: column; */
-              /* flex-wrap: wrap; */
+             
               margin: 10px;
           }
         #imagediv{
@@ -62,6 +62,8 @@
         }
         #removeBtn{
             border: none;
+            background-color: white;
+            color: grey;
         }
         #bottomdiv{
             display: flex;
@@ -70,29 +72,37 @@
             
             margin-top: 1px;
             padding-top: 20px;
-            background-color: black;
+            background-color:rgb(34,34,34);
             color: white;
             
         }
         #Div1{
             width: 30%;
-            margin-left: 10px;
+            margin-left: 30px;
          
 
         }
        
         #Div1 > h2{
-            font-size: 18px;
-            margin-bottom: 20px;
+            font-family: sans-serif;
+            color:rgb(204, 199, 199);
+            font-size: 15px;
+            margin-bottom: 25px;
+
+            
         }
         #Div1 > h3{
-         font-size: 14px;
-        line-height: 5px;
+        font-family: sans-serif;
+        color:rgb(182, 177, 177);
+         font-size: 12px;
+        line-height: 18px;
+        font-weight: lighter;
+       
         }
         #Div2{
             display: block;
             width: 40%;
-           
+           margin-left: 70px;
             flex-wrap: wrap;
 
         }
@@ -101,44 +111,75 @@
            
         }
         #innerDiv1 > h2 {
-            
-           margin-left: 20px;
-          
-           font-size: 18px;
+            font-family: sans-serif;
+            margin-bottom: 0px;
+           margin-left: 10px;
+           color:rgb(182, 177, 177);
+            font-size: 15px;
+        }
+        #h2sub{
+            margin-top: 50px;
+           padding-left: 7px;
+             font-weight: lighter;
         }
 
         #innerDiv1 >#totalprice {
            margin-left: 200px;
+           margin-top: 50px;
+         
         }
         #innerDiv2{
             display: flex; 
+           
             
         }
         #innerDiv2 > h2 {
-            
-            margin-left: 20px;
            
-            font-size: 18px;
+            font-family: sans-serif;
+            margin-left: 20px;
+            color:rgb(182, 177, 177);
+            font-size: 15px;
+            font-weight: lighter;
+           
+           
+          
          }
          
         #innerDiv2 >#charges {
-           margin-left: 150px;
+           margin-left: 142px;
            color: green;
         }
         #paymentbtn{
             width: 250px;
-            height: 60px;
-            background-color: rgb(238, 51, 145);
-            margin-left:100px;
-            margin-top: 60px;
-            /* padding: auto; */
+            height: 50px;
+            background-color:rgb(228,0,70);
+            margin-left:60px;
+            margin-right: 40px;
+            margin-top: 40px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+           
+        }
+        #cartItem{
+            font-family: sans-serif;
+            font-weight: lighter;
+            color:rgb(182, 177, 177);
+            font-size: 15px; 
+        }
+        #sele{
+           width: 60px;
+           height: 40px;
+           border: 1px solid rgb(181, 180, 180);
+           color: grey;
+           border-radius: 5px;
         }
 
     </style>
 </head>
 <body>
     <div id="container">
-    <h1>Shopping Cart</h1>
+    <h1>Shopping Cart <span id="cartItem"></span></span></h1>
     
     <table>
         <thead id="thead">
@@ -146,7 +187,7 @@
                 <td class = "td">Item Details</td>
                 <td class = "td">Price</td>
                 <td class = "td">Quantity</td>
-                <td class = "td">Delivery with Charges <input id="pincodeInp" type="text" placeholder="Pincode"> <button id="btn1" onclick=" pinCode()"  >Check</button> </td>
+                <td class = "td" id="pinCode1">Delivery with Charges <input id="pincodeInp" type="text" placeholder="Pincode"> <button id="btn1" onclick=" pinCode()"  >Check</button> </td>
                 <td class = "td">Subtotal</td>
             </tr>
         </thead>
@@ -167,7 +208,7 @@
         <h3>100% Payment Protection, Easy Returns Policy</h3>
     </div>
     <div id="Div2">
-        <div id="innerDiv1"> <h2>Sub Total :</h2>
+        <div id="innerDiv1"> <h2 id="h2sub">Sub Total :</h2>
             <h2 id="totalprice"> </h2></div>
 
        <div id="innerDiv2">
@@ -193,8 +234,10 @@
      displayItems(cartArr)
      function displayItems(cartArr){
             cartArr.map(function(item) {
-                
+            var trDiv = document.createElement("div");
+            trDiv.setAttribute("id","trDiv")
             var tr = document.createElement("tr")
+            tr.setAttribute("id","row")
 
             var td1 = document.createElement("td");
             var mainDiv = document.createElement("div");
@@ -211,7 +254,7 @@
             h2.textContent = item.type;
             var removeBtn = document.createElement("button")
             removeBtn.setAttribute("id","removeBtn")
-            removeBtn.innerHTML = `<button>Remove</button>`;
+            removeBtn.innerHTML = `<span>X Remove</span>`;
             removeBtn.addEventListener("click", function () {
         makeDelete();
       });
@@ -227,6 +270,7 @@
             var td3 = document.createElement("td")
             
             var sel = document.createElement("select");
+            sel.setAttribute("id","sele")
               var opt1 = document.createElement("option");
               var opt2 = document.createElement("option");
 
@@ -242,15 +286,29 @@
                 var td4 = document.createElement("td");
                 td4.setAttribute("id","td4")
                 td4.textContent = "Check availability and delivery charges for your pincode";
-               
+                // console.log(sel.length)
+                //  var subT = 0;
+                // for (i = 0;i < sel.length;i++){
+                    
+                //     if (i == "0"){
+                //         subT =  item.itemPrice 
+                //     }else if ( i == "1"){
+                //         subT = item.itemPrice + item.itemPrice
+                //     }
+                  
+                // }
+                // console.log(sel)
                 var td5 = document.createElement("td");
-                td5.textContent = "Rs- " + item.itemPrice 
+                td5.textContent = "Rs- " + item.itemPrice
                 
                  var total = cartArr.reduce(function(acc,cv){
             return acc + Number(cv.itemPrice)
         },0)
         var Div2 = document.getElementById("totalprice").textContent = "Rs- " +  total
         var paymentbtn = document.getElementById("paymentbtn").textContent = "PROCEED TO PAY RS. " + total
+        var items = cartArr.length
+        var cartItem  = document.getElementById("cartItem").textContent = `( ${items}   items)`
+        // console.log(cartArr.length)
                
               
             imageDiv.append(img)
@@ -261,18 +319,19 @@
             td3.append(sel) 
           
           tr.append(td1,td2,td3,td4,td5)
+        
           tbody.append(tr)
-        //    containerDiv .append(tbody)
-            // containerDiv.append(td1,td2,td3,td4,td5)
-            //  tbody.append(containerDiv)
+       
         });
         }
         function pinCode(){
               var thead  =  document.getElementById("thead")   
       var btn1 = document.getElementById("btn1");
-            
-         var td5 = document.getElementById("td4").textContent="Available"
-           
+     
+        var td5 = document.getElementById("td4").textContent="Standard Delivery By 19 Nov - 21 Nov Free" 
+          
+          
+    
 
         }
         function makeDelete(index) {
@@ -281,8 +340,10 @@
    
     displayItems(cartArr);
   }
+ 
+
         
-     
+    
            
            
             
