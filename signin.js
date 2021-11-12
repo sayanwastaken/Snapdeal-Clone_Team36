@@ -42,6 +42,9 @@ document.querySelector("#btn-signIn").addEventListener("click", () => {
       pass.value == userArr[i].pass
     ) {
       flag = 0;
+      // localStorage.setItem("Logname",JSON.stringify(userArr[i].name));
+      console.log(userArr[i].name)
+      localStorage.setItem("userName", JSON.stringify(userArr[i].name));
       localStorage.setItem("Loguser", JSON.stringify(emailVal.value));
       alert("Login successful!");
       window.location.href = "productPage.html";
@@ -52,3 +55,8 @@ document.querySelector("#btn-signIn").addEventListener("click", () => {
     alert("Login failed! user does not exist please try again");
   }
 });
+
+
+document.getElementById("btn-signUp").addEventListener("click",()=>{
+  window.location.href="signup.html"
+})
