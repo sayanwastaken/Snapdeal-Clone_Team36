@@ -67,8 +67,8 @@ var cartproduct = [
     {
     image_url:"https://n2.sdlcdn.com/imgs/b/x/0/Heaven-D-cor-Metal-Laxmi-SDL709086684-1-abe57.jpg",
 
-    price:"Rs. 699",
-    pprice:"Rs. 145 ",
+    price:699,
+    pprice:145,
     typeof:"Heaven Decor Brass Laxmi Ganesha idol"
     }
     
