@@ -64,14 +64,17 @@ function pinCode(){
  }
 /--------------------cart--------------------------/
 var cartproduct = [
-    {
-    image_url:"https://n2.sdlcdn.com/imgs/b/x/0/Heaven-D-cor-Metal-Laxmi-SDL709086684-1-abe57.jpg",
+     
 
-    price:"Rs. 699",
-    pprice:"Rs. 145 ",
-    typeof:"Heaven Decor Brass Laxmi Ganesha idol"
-    }
+    {
+        image_url:"https://n2.sdlcdn.com/imgs/b/x/0/Heaven-D-cor-Metal-Laxmi-SDL709086684-1-abe57.jpg",
     
+        price:"Rs. 499",
+        pprice:"Rs. 209 ",
+        typeof:" Hicode Multi Ankle Length Socks Pack of 6"
+        }
+
+         
 ]
 
 
@@ -81,6 +84,7 @@ var cartproduct = [
 
  var array = JSON.parse(localStorage.getItem("cartData")) || []
 
+  
  document.getElementById("Mcart").addEventListener("click", manishbutton)
 
  
@@ -92,17 +96,18 @@ var cartproduct = [
      
 
 
-function manishbutton(){
-    cartproduct.map(function(item){
-                  var obj = {
-                     image: item.image_url,
-                     pprice: item.pprice,
-                     price:item.price,
-                     type:item.typeof,
-        
-                   }
-        
-                   array.push(obj)
-                   localStorage.setItem("CartData", JSON.stringify(array));
-})
-}
+ function manishbutton(){
+     cartproduct.map(function(item){
+                   var obj = {
+                      image: item.image_url,
+                      pprice: item.pprice,
+                      price:item.price,
+                      type:item.typeof,
+         
+                    }
+         
+                    array.push(obj)
+                    localStorage.setItem("CartData", JSON.stringify(array));
+ })
+ }
+ 
