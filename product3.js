@@ -64,14 +64,14 @@ function pinCode(){
  }
 /--------------------cart--------------------------/
 var cartproduct = [
-    {
-    image_url:"https://n2.sdlcdn.com/imgs/b/x/0/Heaven-D-cor-Metal-Laxmi-SDL709086684-1-abe57.jpg",
-
-    price:699,
-    pprice:145,
-    typeof:"Heaven Decor Brass Laxmi Ganesha idol"
-    }
-    
+     
+        {
+            image_url:"https://n1h2.sdlcdn.com/imgs/j/q/i/large/Option_1-92530.webp",
+        
+            price:1000,
+            pprice:249,
+            typeof:"(Lives 3 Ply Disposable Anti Pollution/Surgical..."
+            }
 ]
 
 
@@ -81,6 +81,7 @@ var cartproduct = [
 
  var array = JSON.parse(localStorage.getItem("cartData")) || []
 
+  
  document.getElementById("Mcart").addEventListener("click", manishbutton)
 
  
