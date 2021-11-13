@@ -217,3 +217,37 @@
     document.getElementById("btn-upi").style.backgroundColor="rgb(228, 12, 70)"
     document.getElementById("btn-upi").setAttribute("onclick","success()")
   }
+
+  var sumData=JSON.parse(localStorage.getItem("sumData"))|| []
+  var prodBox=document.getElementById("prodSum")
+
+  displaySum()
+  displayTotal()
+  function displaySum(){
+    sumData.map((item)=>{
+      var mainDiv=document.createElement("div")
+      mainDiv.setAttribute("class","maindiv")
+
+      var div1=document.createElement("div")
+      var div2=document.createElement("div")
+      var p1=document.createElement("p")
+      var p2=document.createElement("p")
+      var p3=document.createElement("p")
+      p1.innerText=item.type;
+      div1.append(p1)
+      p2.innerText="Quantity: 1"
+      p3.innerText="Rs"+"."+item.pprice;
+      div2.append(p2,p3)
+      div2.setAttribute("class","divTwo")
+      mainDiv.append(div1,div2)
+      prodBox.append(mainDiv)
+    })
+  }
+
+  function displayTotal(){
+    var totalVal=sumData.reduce(function(ac,cv){
+      return ac+Number(cv.pprice)
+    },0)
+    document.getElementById("rs").innerText="Rs"+"."+totalVal;
+    document.getElementById("rs2").innerText="Rs"+"."+totalVal;
+  }
