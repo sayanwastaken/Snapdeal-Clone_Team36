@@ -67,11 +67,9 @@ var cartproduct = [
      
         {
             image_url:"https://n1h2.sdlcdn.com/imgs/j/q/i/large/Option_1-92530.webp",
-        
 
             price:1000,
             pprice:249,
-
             typeof:"(Lives 3 Ply Disposable Anti Pollution/Surgical..."
             }
 ]
@@ -80,6 +78,7 @@ var cartproduct = [
 
 //localStorage.setItem("CartData", JSON.stringify(cartproduct));
 //var array = []
+
 
  var array = JSON.parse(localStorage.getItem("CartData")) || []
 
