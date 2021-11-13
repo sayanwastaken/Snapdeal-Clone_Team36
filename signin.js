@@ -56,7 +56,7 @@ document.querySelector("#btn-signIn").addEventListener("click", () => {
   }
 });
 
-{/* <div id="conatiner"></div> */}
+
 document.getElementById("btn-signUp").addEventListener("click",()=>{
   window.location.href="signup.html"
 })

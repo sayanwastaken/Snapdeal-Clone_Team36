@@ -78,8 +78,6 @@ var cartproduct = [
 
 //localStorage.setItem("CartData", JSON.stringify(cartproduct));
 //var array = []
-//localStorage.setItem("CartData", JSON.stringify(cartproduct));
-//var array = []
 
  var array = JSON.parse(localStorage.getItem("cartData")) || []
 
