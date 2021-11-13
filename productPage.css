@@ -150,6 +150,7 @@ body {
 }
 #sideNav {
   grid-area: side;
+
   /* border: 1px solid red; */
 }
 #upperBody {
@@ -160,6 +161,7 @@ body {
 }
 
 #upperImg {
+
   /* border: 1px solid red; */
   width: 78%;
   height: 90%;
@@ -199,6 +201,7 @@ body {
 }
 #imagebottom {
   /* border: 1px solid red; */
+
   width: 100%;
   height: 10%;
   display: flex;
@@ -213,6 +216,7 @@ body {
   background-color: white;
 }
 #pincodediv {
+
   /* border: 1px solid green; */
   margin-left: 10px;
   width: 25%;

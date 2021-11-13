@@ -246,13 +246,16 @@ function myfun() {
   p4.style.display = "grid";
   var product = JSON.parse(localStorage.getItem("AllData"))
   console.log(product)
+
   product.map(function (item,index) {
       displayItems(item.name, item.type, item.image_url, item.price, item.priceP, item.Offer,index)
+
   });
 
   function displayItems(name, type, image_url, price, priceP, Offer,) {
       
       var imageDiv = document.createElement("div");
+
       
       var img = document.createElement("img");
       img.setAttribute("src", image_url)

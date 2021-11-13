@@ -66,8 +66,6 @@ function pinCode(){
 var cartproduct = [
     {
     image_url:"https://n2.sdlcdn.com/imgs/b/x/0/Heaven-D-cor-Metal-Laxmi-SDL709086684-1-abe57.jpg",
-
-
     price:699,
     pprice:145,
 
@@ -80,7 +78,6 @@ var cartproduct = [
 
 //localStorage.setItem("CartData", JSON.stringify(cartproduct));
 //var array = []
-
  var array = JSON.parse(localStorage.getItem("CartData")) || []
 
  document.getElementById("Mcart").addEventListener("click", manishbutton)
