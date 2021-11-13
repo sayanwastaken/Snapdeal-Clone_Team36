@@ -49,7 +49,7 @@ function signup(){
         document.getElementById("repass").style.borderColor="red";
         alert("Re-enter password must be same.")
     }
-    window.location.href="signin.html";
+   
 }
 document.getElementById("btn-signin").addEventListener("click",signIn);
 function signIn(){
