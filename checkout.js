@@ -111,12 +111,39 @@ function gotopayment(){
 document.getElementById("mobile").value="+91 ";
 document.getElementById("altermob").value="+91 ";
 // for next page review order make payment//
-document.getElementById("reviewnav").addEventListener("click", reviewOrder);
-function reviewOrder(){
-      window.location.href="review.html";
-}
+
 document.getElementById("paymentnav").addEventListener("click", paymentpage);
 function paymentpage(){
       window.location.href="payment.html"
 }
+var summary=JSON.parse(localStorage.getItem("sumData"));
+displayItem(summary);
+function displayItem(summary){
+      summary.map(function(item){
+            var div=document.createElement("div");
+            div.setAttribute("class",div);
+            var div1=document.createElement("div");
+            div1.setAttribute("id","div1");
+            div1.textContent=item.type;
+            var div2=document.createElement("div");
+            div2.setAttribute("id","div2");
+            var p1=document.createElement("p");
+            p1.innerHTML=`<p>Quantity:</p>`
+            var p2=document.createElement("p");
+            p2.setAttribute("class","p2");
+            p2.textContent="Rs."+item.pprice;
+            div2.append(p1,p2);
+            div.append(div1,div2)
+            document.getElementById("sum2").append(div);
+      });
+}
+totalsum();
 
+function totalsum(){
+      var totalvalue=summary.reduce(function(ac,cv){
+            return ac+ Number(cv.pprice);
+      },0);
+     // console.log(totalvalue);
+     document.getElementById("rs").innerText="Rs."+totalvalue;
+     document.getElementById("rs1").innerText="Rs."+totalvalue;
+}

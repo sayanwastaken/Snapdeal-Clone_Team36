@@ -12,13 +12,18 @@ function signup(){
         document.getElementById("name").style.borderColor="grey";
     }
     var emOrmobile=document.getElementById("emOrmobile").value;
-    if(emOrmobile==""){
+    var flag=0;
+    for(var i=0;i<emOrmobile.length;i++){
+       if(emOrmobile[i]=="@"){
+           document.getElementById("emOrmobile").style.borderColor="grey";
+           flag=1;
+            break;
+        }
+    }
+     if(flag==0){
         document.getElementById("emOrmobile").style.borderColor="red";
         alert("Please enter a valid email");
-        return false;
-    }
-    else{
-        document.getElementById("emOrmobile").style.borderColor="grey";
+        return false;   
     }
     var pass=document.getElementById("pass").value;
     var repass=document.getElementById("repass").value;

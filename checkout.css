@@ -80,17 +80,18 @@ body{
          height: 747px;
          margin-top: 25px;
          margin-left: 30px;
-         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
          /*margin-top: 30px;*/
         
     }
     #right{
             float: right;
-            width: 20%;
-            height: 727px;
+            width: 27%;
+            height: 773px;
             margin-left: 30px;
             display: flex;
-            flex-direction: column;       
+            flex-direction: column; 
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;   
     }
    
     h5{
@@ -149,7 +150,7 @@ body{
    #navtext{
      color: white;
     font-size: 14px;
-    width: 25%;
+    width: 27%;
     padding: 15px;
     float: right; 
    }
@@ -174,21 +175,6 @@ body{
          color: black;
          height: 33px;
   }
-  #reviewnav{ 
-    
-  height: 50px;
-  width: 65%; 
-  border-color: transparent;
-  color: white;  
-  border-radius: 3px;
-  margin-left: 54px; 
-  margin-top: 5px;
-  outline: none;
-  color: grey;
-  text-align: left;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);           
-}
   #paymentnav{ 
     height: 50px;
     width: 65%; 
@@ -202,4 +188,90 @@ body{
     padding: 10px;
     border-color: transparent;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);           
+}
+#sum1{
+  
+  width: 96%;
+  height: 50px;
+  margin-top: 10px;
+}
+#sum2{
+  
+  width: 96%;
+  height: 300px;
+  margin-top: 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#sum3{
+  
+  width: 96%;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#sum31{
+  
+  float: left;
+  width: 50%;
+  height: 100px;
+}
+#sum32{
+ 
+  float: left;
+  width: 50%;
+  height: 100px;
+}
+
+#sum4{
+ 
+  width: 96%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+#sum41{
+  
+  float: left;
+  width: 50%;
+  height: 100px;
+  font-size: 22px;
+  
+}
+#sum42{
+ 
+  float: right;
+  width: 50%;
+  height: 100px;
+ 
+}
+.div{
+    padding: 10px;
+
+}
+#div1{
+  
+  width: 96%;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#div2{
+  width: 96%;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+   justify-content: space-between;
+}
+.green{
+  color: green;
+}
+.p2{
+    margin-top: 32px;
 }
