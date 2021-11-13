@@ -225,7 +225,7 @@
 </body>
 </html>
 <script>
-     var cartArr = JSON.parse(localStorage.getItem("cartShop")) || [] ;
+     var cartArr = JSON.parse(localStorage.getItem("CartData")) || [] ;
      var body = document.querySelector("body")
      var tbody = document.getElementById("tbody")
 
@@ -266,7 +266,7 @@
             var img = document.createElement("img");
             img.setAttribute("src",item.image)
             var td2 =  document.createElement("td");
-            td2.textContent = "Rs- " + item.itemPrice 
+            td2.textContent = "Rs- " + item.pprice 
             var td3 = document.createElement("td")
             
             var sel = document.createElement("select");
@@ -299,12 +299,13 @@
                 // }
                 // console.log(sel)
                 var td5 = document.createElement("td");
-                td5.textContent = "Rs- " + item.itemPrice
+                td5.textContent = "Rs-" + Number(item.pprice)
+                console.log(item.pprice)
                 
                  var total = cartArr.reduce(function(acc,cv){
-            return acc + Number(cv.itemPrice)
+            return acc + Number(cv.pprice)
         },0)
-        var Div2 = document.getElementById("totalprice").textContent = "Rs- " +  total
+        var Div2 = document.getElementById("totalprice").textContent =    total
         var paymentbtn = document.getElementById("paymentbtn").textContent = "PROCEED TO PAY RS. " + total
         var items = cartArr.length
         var cartItem  = document.getElementById("cartItem").textContent = `( ${items}   items)`
@@ -324,6 +325,7 @@
        
         });
         }
+    
         function pinCode(){
               var thead  =  document.getElementById("thead")   
       var btn1 = document.getElementById("btn1");
@@ -336,7 +338,7 @@
         }
         function makeDelete(index) {
     cartArr.splice(index,1);
-    localStorage.setItem("cartShop", JSON.stringify(cartArr));
+    localStorage.setItem("CartShop", JSON.stringify(cartArr));
    
     displayItems(cartArr);
   }
