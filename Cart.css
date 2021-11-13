@@ -1,0 +1,170 @@
+#container{
+    width: 94%;
+    height: 400px;
+   
+    margin: auto;
+    overflow-y:scroll;
+    flex-wrap: wrap;
+    color: gray;
+}
+
+
+thead{
+    background-color:rgb(247,247,247);
+   
+}
+.td{
+padding: 18px;
+ margin: 10px;
+}
+#pricet{
+    padding: 25px;
+}
+td{
+    padding: 15px;
+}
+       
+#maindiv{
+    display: flex;
+   
+    margin: 10px;
+}
+#imagediv{
+ 
+  flex-direction: row;
+ margin-left: 10px;
+}
+#detailsdiv{
+ 
+  flex-direction: column;
+  margin-left: 20px;
+ 
+}
+img{
+  width: 200px;
+  height: 150px;
+ 
+}
+option{
+  width: 50px;
+}
+#btn1{
+  background-color: black;
+  color: white;
+}
+#pincodeInp{
+  width: 60px;
+}
+#removeBtn{
+  border: none;
+  background-color: white;
+  color: grey;
+}
+#bottomdiv{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  
+  margin-top: 1px;
+  padding-top: 20px;
+  background-color:rgb(34,34,34);
+  color: white;
+  
+}
+#Div1{
+  width: 30%;
+  margin-left: 30px;
+
+
+}
+#Div1 > h2{
+    font-family: sans-serif;
+    color:rgb(204, 199, 199);
+    font-size: 15px;
+    margin-bottom: 25px;
+
+    
+}
+#Div1 > h3{
+font-family: sans-serif;
+color:rgb(182, 177, 177);
+ font-size: 12px;
+line-height: 18px;
+font-weight: lighter;
+
+}
+#Div2{
+    display: block;
+    width: 40%;
+   margin-left: 70px;
+    flex-wrap: wrap;
+
+}
+#innerDiv1{
+    display: flex;
+   
+}
+#innerDiv1 > h2 {
+    font-family: sans-serif;
+    margin-bottom: 0px;
+   margin-left: 10px;
+   color:rgb(182, 177, 177);
+    font-size: 15px;
+}
+#h2sub{
+    margin-top: 50px;
+   padding-left: 7px;
+     font-weight: lighter;
+}
+#innerDiv1 >#totalprice {
+    margin-left: 200px;
+    margin-top: 50px;
+  
+ }
+ #innerDiv2{
+     display: flex; 
+    
+     
+ }
+ #innerDiv2 > h2 {
+    
+     font-family: sans-serif;
+     margin-left: 20px;
+     color:rgb(182, 177, 177);
+     font-size: 15px;
+     font-weight: lighter;
+    
+    
+   
+  }
+  
+ #innerDiv2 >#charges {
+    margin-left: 142px;
+    color: green;
+ }
+ #paymentbtn{
+     width: 250px;
+     height: 50px;
+     background-color:rgb(228,0,70);
+     margin-left:60px;
+     margin-right: 40px;
+     margin-top: 40px;
+     color: white;
+     border-radius: 5px;
+     border: none;
+    
+ }
+ #cartItem{
+     font-family: sans-serif;
+     font-weight: lighter;
+     color:rgb(182, 177, 177);
+     font-size: 15px; 
+ }
+ #sele{
+    width: 60px;
+    height: 40px;
+    border: 1px solid rgb(181, 180, 180);
+    color: grey;
+    border-radius: 5px;
+ }
+
