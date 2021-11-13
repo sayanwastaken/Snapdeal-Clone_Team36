@@ -1,6 +1,7 @@
 
 
 /-----------------button check--------------------------------/ 
+// 
 
 document.getElementById("check").addEventListener("click", pinCode);
  

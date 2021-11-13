@@ -45,7 +45,7 @@ function submitFun() {
 
 
 
-
+// var lolo=0
 var flag=0
 
 function controller(x){
