@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div id="nav">
+       <img id="im" width="50px";
+            height="30px";
+          src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg"
+         
+      />
+      
+        <p id="navtext">100% Payment Protection, Easy Returns Policy</p>  
+    </div>
+    <div id="contain">
+      <div id="l2"></div>
+      <div id="r2"></div>
+    <div id="main">
+      <div id="left">
+        <div id="nav2">
+          <h4></h4>
+        </div>
+        <div id="nav1">
+         <h3>2.Delivery Address</h3>
+        </div>
+        <div id="l1">
+          <div class="tex">Pincode</div>
+          <div class="tex" >Name</div>
+          <div id="address1" class="tex">Address</div>
+          <div class="tex" >Locality/Landmark</div>
+          <div class="tex">City</div>
+          <div class="tex">State</div>
+          <div class="tex">Mobile Number</div>
+          <div class="tex">Alternate Mobile No.</div>
+          <div class="tex">Address type</div>
+        </div>
+        <div id="r1">
+        <input id="pin" class="in" type="number" placeholder="6 digit pincode">
+        <input id="name" class="in" type="text" placeholder="Full name">
+        <input id="add" class="in" type="text" placeholder="Flat/House No. Colony/Street No.">
+        <input id="locality" class="in" type="text" placeholder="Eg. Near Appolo hospital">
+        <input id="city" class="in" type="text" placeholder="City">
+        <input id="state" class="in" type="text" placeholder="State">
+        <input id="mobile" class="in" type="text" placeholder="10 digit mobile no.">
+        <input id="altermob" class="in" type="text" placeholder="10 digit mobile no.">
+        <select id="selected" class="in">
+          <option value="">Select</option>
+          <option value="home">Home/Personal</option>
+          <option value="office">Office/Commercial</option>
+          </select>
+          <br/>
+        </div>
+        <button id="btn2">SAVE AND CONTINUE</button>
+      </div> 
+      <div id="right">
+        <div id="sum1">
+       <h5>SUMMARY OF ITEMS</h5>
+       </div>
+       <div id="sum2">
+       
+       </div>
+       <div id="sum3">
+      <div id="sum31">
+        <p>Total:</p>
+        <p>Delivery Charges:</p>
+      </div>
+      <div id="sum32">
+        <p id="rs"></p>
+        <p class="green">Free</p>
+      </div>
+       </div>
+       <div id="sum4">
+        <div id="sum41">
+          <p>You Pay:</p>
+        </div>
+        <div id="sum42"></div>
+        <p id="rs1"></p>
+       </div>
+
+       </div>
+       </div>
+       <input id="paymentnav" type="button" value="4.MAKE PAYMENT"/>
+      </div>
+
+</body>
+</html>
+<script src="checkout.js"></script>

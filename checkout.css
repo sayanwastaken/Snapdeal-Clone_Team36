@@ -1,0 +1,277 @@
+body{
+    font-family: sans-serif;
+  }
+  
+    #logo{
+        background-color: red;
+
+          width: 150px;
+         height: 50px;    
+    }
+      #nav{
+          background-color: #c7003d;
+          height: 82px;
+          width: 100%; 
+    }
+    #nav2{
+          border-top: .00001px solid grey;
+          height: 50px;
+          width: 100%; 
+          color: grey; 
+          font-size: 15px;
+          border-radius: 3px;
+    }
+    img{
+      float: left;
+      width: 30px;
+      height: 20px;
+      margin-top: 20px;
+      margin-left: 30px;
+      border-radius: 50%;
+     
+}
+    h4{
+       float: right;
+       margin-right: 57%;
+      font-weight: 400;
+    }
+    h5{
+           float: left;
+           margin-left: 4%;
+          
+    }
+   
+      #nav1{
+          background-color: #333;
+          height: 50px;
+          width: 100%; 
+          color: white;  
+          border-radius: 3px;              
+    }
+    h3{
+      font-weight: 300;
+      margin-left: 40px;
+      padding-top: 12px;
+     
+    }
+    #text{
+     
+      margin-left: 50px;
+    
+    }
+    #im{
+        height: 40%;
+        width: 18%;
+        margin-top: 0px;
+        margin-left: 10px;
+        padding-top: 20px;
+        cursor: pointer;
+    }
+    #main{
+      width: 92%;
+      display:flex;
+      height: 773px;
+      margin-left: 54px;
+      flex-direction: row;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);           
+    }
+    #left{
+         width: 68%;
+         height: 747px;
+         margin-top: 25px;
+         margin-left: 30px;
+         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+         /*margin-top: 30px;*/
+        
+    }
+    #right{
+            float: right;
+            width: 27%;
+            height: 773px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column; 
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;   
+    }
+   
+    h5{
+      color: grey;
+    }
+    #l1{
+      float: left;
+    
+      width: 20%;
+      height: 75%;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+    #r1{
+     
+      width: 25%;
+      height: 75%;
+      float: right;
+      margin-right: 47%;
+      display: flex;
+      flex-direction: column;
+    }
+    .in{
+      margin-top: 20px;
+      height: 25px;
+      color: grey;
+    }
+    #add{
+         height: 70px;
+        
+    }
+    .tex{
+      
+      margin-top: 20px;
+      height: 29px;
+      color: grey;
+     
+    }
+   #address1{
+           height: 70px;
+          padding: 3px;
+   }
+   #btn2{
+     width: 27%;
+     height: 45px;
+     border: 1px solid #c7003d;
+     margin-left:27%;
+     color: white;
+     background-color: #c7003d;
+     border-radius: 3px;
+   }
+   #btn2:hover{
+     background-color: rgb(161, 6, 6);
+   }
+   #navtext{
+     color: white;
+    font-size: 14px;
+    width: 27%;
+    padding: 15px;
+    float: right; 
+   }
+   #contain{
+        width: 100%;
+        height: 895px;
+   }
+   #l2{
+      float: left;
+      width: 52px;
+      height: 22px;
+      background-color: #c7003d;
+  }
+  #r2{
+      float: right;
+   
+      width: 52px;
+      height: 22px;
+      background-color: #c7003d;
+  }
+  #selected{
+         color: black;
+         height: 33px;
+  }
+  #paymentnav{ 
+    height: 50px;
+    width: 65%; 
+    color: white;  
+    border-radius: 3px;
+    margin-left: 54px; 
+    margin-top: 5px;
+    outline: none;
+    color: grey;
+    text-align: left;
+    padding: 10px;
+    border-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);           
+}
+#sum1{
+  
+  width: 96%;
+  height: 50px;
+  margin-top: 10px;
+}
+#sum2{
+  
+  width: 96%;
+  height: 300px;
+  margin-top: 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#sum3{
+  
+  width: 96%;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#sum31{
+  
+  float: left;
+  width: 50%;
+  height: 100px;
+}
+#sum32{
+ 
+  float: left;
+  width: 50%;
+  height: 100px;
+}
+
+#sum4{
+ 
+  width: 96%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+#sum41{
+  
+  float: left;
+  width: 50%;
+  height: 100px;
+  font-size: 22px;
+  
+}
+#sum42{
+ 
+  float: right;
+  width: 50%;
+  height: 100px;
+ 
+}
+.div{
+    padding: 10px;
+
+}
+#div1{
+  
+  width: 96%;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#div2{
+  width: 96%;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+   justify-content: space-between;
+}
+.green{
+  color: green;
+}
+.p2{
+    margin-top: 32px;
+}
