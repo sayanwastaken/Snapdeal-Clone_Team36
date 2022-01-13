@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snapdeal homepage</title>
+    <link rel="stylesheet" href="productPage.css" />
+    <link rel="shortcut icon" href="resource/favicon.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/aef89a3861.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!------------------------------------- this code is for nav bar------ =========================-->
+
+    <div id="navBar">
+      <div id="firstDiv">
+        <div id="firstCornerdiv">
+          <p>Brand Waali Quality, Bazaar Waali Deal!</p>
+        </div>
+        <div id="scndCornerdiv">
+          <div class="firstDivConerText"><p>Impact@Snapdeal</p></div>
+          <div class="firstDivConerText"><p>Gift Cards</p></div>
+          <div class="firstDivConerText"><p>Help Center</p></div>
+          <div class="firstDivConerText"><p>Sell On Snapdeal</p></div>
+          <div class="firstDivConerText">
+            <div id="mobileImg">
+              <img
+                height="100%"
+                src="https://i4.sdlcdn.com/img/platinum09/downloadappicon2ndsep.png"
+                alt=""
+              />
+            </div>
+            <div id="mobileText">
+              <p>Download App</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="secondDiv">
+        <img
+          id="scndDivIMG"
+          src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg"
+          alt=""
+        />
+        <label for="search"></label>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          placeholder="Search Products and brand"
+        />
+        <button id="btnsearch">Search</button>
+        <div id="cartandsignIN">
+          <div id="cart">
+            <div>
+              <p>Cart</p>
+            </div>
+            <div id="imagecart">
+              <img
+                width="50%"
+                src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div id="signIN" onclick="bat()">
+            <!-- signIn -->
+              <div 
+              id="signbtn">Sign In
+              </div>
+              <div id="imageSinIn"onclick="bat()">
+                <img
+                  width="50%"
+                  src="https://cdn-icons.flaticon.com/png/512/666/premium/666201.png?token=exp=1635796006~hmac=fead5a874b251aca542ac69cc7ed9d17"
+                  alt=""
+                />
+              </div>
+            
+             
+            </div>
+            
+          
+
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- above code is for nav bar------------------------------------ -->
+
+    <div id="container">
+      <div id="sideNav">
+        <p>TOP CATEGORIES</p>
+        <p>All Offers</p>
+        <p>Mobile And Tablets</p>
+        <p>Electronics</p>
+        <p>Computing And Gaming</p>
+        <p>Home And Kitchen</p>
+        <p>More Categories</p>
+        <p>Men Fashion</p>
+        <p>Women Fashion</p>
+        <p>Toys kids & More</p>
+        <p>Beauty Health and Daily Needs</p>
+        <p>Sports Fitness & Outdoor</p>
+        <p>Car & MotorBike</p>
+        <p>Hobbies</p>
+        <p>Books,Media & Music</p>
+        <p>See All Categories</p>
+      </div>
+      <div id="upperBody">
+        <div id="upperImg">
+          <div id="Slide_container">
+            <div class="slide">
+              <img
+                class="slider_img"
+                src="https://media.istockphoto.com/photos/totally-free-full-length-of-handsome-young-man-keeping-arms-while-picture-id1157131733?k=20&m=1157131733&s=612x612&w=0&h=utZ5327CRMN6amf_XZ6PDMukWeQSuUb1lfTp_4uO2gM="
+                alt=""
+              />
+            </div>
+
+            <div class="slide">
+              <img id="image1" class="slider_img" src="https://media.istockphoto.com/photos/handsome-young-african-man-looking-at-camera-and-keeping-hand-on-chin-picture-id1192089195?k=20&m=1192089195&s=612x612&w=0&h=plnkOz_fjdZ6jUPZywlpP0xo0CNVRzYBGuE-itneBpk=" alt="">
+            </div>
+
+            <div class="slide">
+              <img id="image2" class="slider_img" src="https://media.istockphoto.com/photos/curiosity-young-bearded-and-handsome-man-in-casual-clothes-is-looking-picture-id1129816771?k=20&m=1129816771&s=612x612&w=0&h=UFjzIWr49G6eDXIcUIsxjhaMt9YN2iIOOo0r2BnGThk=" alt="">
+            </div>
+
+            <div class="slide">
+              <img id="image3" class="slider_img" src="https://media.istockphoto.com/photos/fulllength-portrait-of-an-asian-man-on-a-white-background-picture-id1328526567?k=20&m=1328526567&s=612x612&w=0&h=lQr-ZO-En1MfBhgaqBZMlGluus6wZJj34n1ouO1sHV8=" alt="">
+            </div>
+
+            <div class="slide">
+              <img id="image4" class="slider_img" src="https://media.istockphoto.com/photos/man-with-bright-smile-sitting-on-the-floor-picture-id698590076?k=20&m=698590076&s=612x612&w=0&h=wcd9RMT5YvTd9LB3dZV8WOi85EN28vb2Z2Ez-jwJK_0=" alt="">
+            </div>
+
+            <span class="arrow prev" onclick=" controller(-1)">&#10094;</span>
+            <span class="arrow next" onclick=" controller(1)">&#10095;</span>
+          </div>
+
+          <div id="imagebottom">
+          <button class="imageBottomText" id="btn1"  onclick=" controller(-1)" >Snapdeal</button>
+          <button class="imageBottomText" id="btn2" onclick=" controller(-1)" >Download Our App</button>
+          <button class="imageBottomText" id="btn3"  onclick=" controller(-1)" >Diya Idols And More</button>
+          <button class="imageBottomText" id="btn4"onclick=" controller(-1)" >Cookware Collection</button>
+          <button class="imageBottomText" id="btn5"  onclick=" controller(-1)" >Fashion Jwellery</button>
+
+            <!-- <div class="imageBottomText">Snapdeal</div>
+            <div class="imageBottomText">Download Our App</div>
+            <div class="imageBottomText">Diya Idols And More</div>
+            <div class="imageBottomText">Cookware Collection</div>
+            <div class="imageBottomText">Fashion Jwellery</div> -->
+          </div>
+          <div class="navigation_manual">
+            <label for="btn1" class="manual_btn"></label>
+            <label for="btn2" class="manual_btn"></label>
+            <label for="btn3" class="manual_btn"></label>
+            <label for="btn4" class="manual_btn"></label>
+            <label for="btn5" class="manual_btn"></label>
+          </div>
+        </div>
+        <div id="pincodediv">
+          <div id="mapImage">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/854/854894.png"
+              alt=""
+            />
+            <p style="color: #999999">Your Delivery Pincode</p>
+            <p style="color: #5a5a59">
+              Enter your pincode to check the availability and faster delivery
+            </p>
+          </div>
+
+          <div id="input-container">
+            <div id="number">
+              <input type="number" id="inputPin" placeholder="Enter pincode" />
+              <p id="pintext" style="margin-top: 0px; color: red"></p>
+            </div>
+            <p id="value"></p>
+          </div>
+          <div id="pincodeBtn">
+            <button id="SubmitBtn">Submit</button>
+            <button id="NextBtn">
+              <span>Next</span>
+            </button>
+          </div>
+        </div>
+        <br>
+        <!-- <div>
+          <p>dhhd</p>
+        </div> -->
+      </div>
+      <div id="lowerBoddy">
+        <div class="Timagebox">
+          <div>
+            <img   class="Timage"  src="https://n1.sdlcdn.com/imgs/i/z/e/large/Bentag-Vegetable-Fruit-Clever-Cutter-SDL841893040-1-ea5e3.jpg" alt="">
+          </div>
+         <div>
+          <div class="productsText">
+            <p style="
+            font-size: 13px;
+
+            font-weight: 400;
+            
+            line-height: 18px;
+            
+            color: rgb(153, 153, 153)">Bentag Vegetable & Fruit Clever Cutter <br> Stainless Steel Vegetable Scissor</p>
+            <i class="fas fa-star" style="color: #ffc315;"></i>
+            <i class="fas fa-star" style="color: #ffc315;"></i>
+            <i class="fas fa-star" style="color: #ffc315;"></i>
+            <i class="fas fa-star" style="color: #ffc315;"></i>
+            <i class="fas fa-star" style="color: #e9e9e9;"></i>
+            <div class="price">
+                <p class="cut" style="font-size: 13px;
+
+                font-weight: 400;
+               
+               line-height: 13px;
+               
+               color: rgb(204, 204, 204)">RS 410</p>
+                <p style="padding-left: 4px; font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 13px;
+                
+                color: rgb(51, 51, 51)">Rs 100</p>
+                <button style="font-size: 10px;
+                font-weight: 400;
+                line-height: 10px;
+                background-color: rgb(153, 153, 153);">80% OFF</button>
+            </div>
+        </div>
+         </div>
+          
+        </div>
+        
+        <div class="Timagebox">
+          <div>
+            <img  class="Timage"  src="https://n1.sdlcdn.com/imgs/i/z/e/large/Wonderchef-Plastic-Manual-Chopper-SDL629944208-1-ccc77.jpg" alt="">
+          </div>
+          <div>
+            <div class="productsText">
+              <p style="
+              font-size: 13px;
+  
+              font-weight: 400;
+              
+              line-height: 18px;
+              
+              color: rgb(153, 153, 153)">Wonderchef Classic String Chopper <br>500ml</p>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #e9e9e9;"></i>
+              <div class="price">
+                  <p class="cut" style="font-size: 13px;
+  
+                  font-weight: 400;
+                 
+                 line-height: 13px;
+                 
+                 color: rgb(204, 204, 204)">RS 700</p>
+                  <p style="padding-left: 4px; font-size: 13px;
+  
+                  font-weight: 400;
+                  
+                  line-height: 13px;
+                  
+                  color: rgb(51, 51, 51)">Rs 310</p>
+                  
+                  <button style="font-size: 10px;
+                  font-weight: 400;
+                  line-height: 10px;
+                  background-color: rgb(153, 153, 153);">56% OFF</button>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="Timagebox">
+          <div>
+            <img class="Timage"  src="https://n1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg" alt="">
+          </div>
+          <div>
+            <div class="productsText">
+              <p style="
+              font-size: 13px;
+  
+              font-weight: 400;
+              
+              line-height: 18px;
+              
+              color: rgb(153, 153, 153)">Loard Shiv Trishul Damru Locket With Puchmukhi Rudraksha  <br>Mala Gold-plated Brass, Wood</p>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #e9e9e9;"></i>
+              <div class="price">
+                  <p class="cut" style="font-size: 13px;
+  
+                  font-weight: 400;
+                 
+                 line-height: 13px;
+                 
+                 color: rgb(204, 204, 204)">RS 1,499</p>
+                  <p style="padding-left: 4px; font-size: 13px;
+  
+                  font-weight: 400;
+                  
+                  line-height: 13px;
+                  
+                  color: rgb(51, 51, 51)">Rs 409</p>
+                  <button style="font-size: 10px;
+                  font-weight: 400;
+                  line-height: 10px;
+                  background-color: rgb(153, 153, 153);">76% OFF</button>
+              </div>
+
+          </div>
+          </div>
+        </div>
+        
+        <div class="Timagebox">
+          <div>
+            <img class="Timage"  src="https://n2.sdlcdn.com/imgs/j/o/r/large/Veirdo-100-Percent-Cotton-Green-SDL302182620-1-1ba35.jpeg" alt="">
+          </div>
+          <div>
+            <div class="productsText">
+              <p style="
+              font-size: 13px;
+  
+              font-weight: 400;
+              
+              line-height: 18px;
+              
+              color: rgb(153, 153, 153)">Veirdo 100 Percent Cotton Green Color  <br>Block T-Shirt</p>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #e9e9e9;"></i>
+              <div class="price">
+                  <p class="cut" style="font-size: 13px;
+  
+                  font-weight: 400;
+                 
+                 line-height: 13px;
+                 
+                 color: rgb(204, 204, 204)">Rs. 1,199 </p>
+                  <p style="padding-left: 4px; font-size: 13px;
+  
+                  font-weight: 400;
+                  
+                  line-height: 13px;
+                  
+                  color: rgb(51, 51, 51)">Rs. 269 </p>
+                  <button style="font-size: 10px;
+                  font-weight: 400;
+                  line-height: 10px;
+                  background-color: rgb(153, 153, 153);">76% OFF</button>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="Timagebox">
+          <div>
+            <img class="Timage"  src="https://n4.sdlcdn.com/imgs/j/x/8/large/Callmate-H-40-With-USB-SDL257998546-1-23845.jpeg" alt="">
+          </div>
+          <div>
+            <div class="productsText">
+              <p style="
+              font-size: 13px;
+  
+              font-weight: 400;
+              
+              line-height: 18px;
+              
+              color: rgb(153, 153, 153)">Callmate H-40 With USB BULB 10000-mAh  <br>Li-Polymer Power Bank Grey</p>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #ffc315;"></i>
+              <i class="fas fa-star" style="color: #e9e9e9;"></i>
+              <div class="price">
+                  <p class="cut" style="font-size: 13px;
+  
+                  font-weight: 400;
+                 
+                 line-height: 13px;
+                 
+                 color: rgb(204, 204, 204)">RS 999</p>
+                  <p style="padding-left: 4px; font-size: 13px;
+  
+                  font-weight: 400;
+                  
+                  line-height: 13px;
+                  
+                  color: rgb(51, 51, 51)">Rs 89</p>
+                  <button style="font-size: 10px;
+                  font-weight: 400;
+                  line-height: 10px;
+                  background-color: rgb(153, 153, 153);">76% OFF</button>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="Timagebox">
+          <div>
+            <img  class="Timage" src="https://n4.sdlcdn.com/imgs/i/z/e/large/Maxbell-USB-Rechargeable-Electronic-Flameless-SDL679184483-1-08e0f.jpg" alt="">
+          </div>
+         <div>
+          <div class="productsText">
+            <p style="
+            font-size: 13px;
+
+            font-weight: 400;
+            
+            line-height: 18px;
+            
+            color: rgb(153, 153, 153)">Maxbell USB Rechargeable<br>Flameless Lighter</p>
+            <i class="fas fa-star" style="color: #ffc315;"></i>
+            <i class="fas fa-star" style="color: #ffc315;"></i>
+            <i class="fas fa-star" style="color: #ffc315;"></i>
+            <i class="fas fa-star" style="color: #ffc315;"></i>
+            <i class="fas fa-star" style="color: #e9e9e9;"></i>
+            <div class="price">
+                <p class="cut" style="font-size: 13px;
+
+                font-weight: 400;
+               
+               line-height: 13px;
+               
+               color: rgb(204, 204, 204)">RS 599</p>
+                <p style="padding-left: 4px; font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 13px;
+                
+                color: rgb(51, 51, 51)">Rs 99</p>
+                <button style="font-size: 10px;
+                font-weight: 400;
+                line-height: 10px;
+                background-color: rgb(153, 153, 153);">96% OFF</button>
+            </div>
+        </div>
+         </div>
+        </div>
+       
+        
+      </div>
+    </div>
+
+     <!-- All The part finished till the sliding image -->
+
+
+     <!-- Product page start -->
+
+    <div id="ProductPage">
+      <div id="productMain">
+        <!----------------------img1------------------------------>
+
+
+        <div class="products">
+            <div class="productsImg">
+
+
+              <a href="individualproduct2.html" style="text-decoration: none;">
+                <img
+                    src="https://n1h2.sdlcdn.com/imgs/j/g/i/large/hicode-Multi-Ankle-Length-Socks-SDL235892839-1-8343e.webp">
+            </div>
+            <div class="productsText">
+                <p style="
+                font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 18px;
+                
+                color: rgb(153, 153, 153)">Hicode Multi Ankle <br> Length Socks Pack of 6</p>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #e9e9e9;"></i>
+                <div class="price">
+                    <p class="cut" style="font-size: 13px;
+
+                     font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(204, 204, 204)">RS 499</p>
+                    <p style="padding-left: 4px; font-size: 13px;
+
+                    font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(51, 51, 51)">Rs 209</p>
+                    <button style="font-size: 10px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    background-color: rgb(153, 153, 153);">58% OFF</button>
+                </div>
+            </div>
+
+          </a>
+
+        </div>
+
+        <!----------------------img2------------------------------>
+
+
+        <div class="products">
+            <div class="productsImg">
+              <a href="product3.html">                <img src="https://n1h2.sdlcdn.com/imgs/j/q/i/large/Option_1-92530.webp">
+            </div>
+            <div class="productsText">
+                <p style="
+                font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 18px;
+                
+
+                color: rgb(153, 153, 153)">Lives 3 Ply Disposable<br>Anti Pollution/Surgical...</p>
+
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #e9e9e9;"></i>
+                <div class="price">
+                    <p class="cut" style="font-size: 13px;
+
+                    font-weight: 400;
+                   
+                   line-height: 13px;
+                   
+                   color: rgb(204, 204, 204)">RS 1,000</p>
+                    <p style="padding-left: 4px; font-size: 13px;
+
+                    font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(51, 51, 51)">Rs 249</p>
+                    <button style="font-size: 10px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    background-color: rgb(153, 153, 153);">75% OFF</button>
+                </div>
+            </div>
+
+          </a>
+
+        </div>
+
+
+        <!----------------------img3------------------------------>
+
+
+        <div class="products">
+            <div class="productsImg">
+                <img
+                    src="https://n1h2.sdlcdn.com/imgs/j/p/o/large/Cyan-spritual-Original-Nepali-1-SDL976041731-1-655dd.webp">
+            </div>
+            <div class="productsText">
+                <p style="
+                font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 18px;
+                
+                color: rgb(153, 153, 153)">Cyan spritual Original<br>Nepali Rudraksh Mala...</p>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #e9e9e9;"></i>
+                <div class="price">
+                    <p class="cut" style="font-size: 13px;
+
+                    font-weight: 400;
+                   
+                   line-height: 13px;
+                   
+                   color: rgb(204, 204, 204)">RS 599</p>
+                    <p style="padding-left: 4px; font-size: 13px;
+
+                    font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(51, 51, 51)">Rs 144</p>
+                    <button style="font-size: 10px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    background-color: rgb(153, 153, 153);">76% OFF</button>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------img4------------------------------>
+
+
+        <div class="products">
+            <div class="productsImg">
+                <img src="https://n1h2.sdlcdn.com/imgs/j/k/l/large/Queue-Pocket-Knife-8-cm-SDL819711574-1-09cd2.webp">
+            </div>
+            <div class="productsText">
+                <p style="
+                font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 18px;
+                
+                color: rgb(153, 153, 153)">Queue Safety tool 8 cm <br></p>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #e9e9e9;"></i>
+                <div class="price">
+                    <p class="cut" style="font-size: 13px;
+
+                    font-weight: 400;
+                   
+                   line-height: 13px;
+                   
+                   color: rgb(204, 204, 204)">RS 799</p>
+                    <p style="padding-left: 4px; font-size: 13px;
+
+                    font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(51, 51, 51)">Rs 309</p>
+                    <button style="font-size: 10px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    background-color: rgb(153, 153, 153);">61% OFF</button>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------img5------------------------------>
+
+
+        <div class="products">
+            <div class="productsImg">
+                <img
+                    src="https://n1h2.sdlcdn.com/imgs/j/v/4/large/UNIBLESS-Sendha-Namak-Rock-Salt-SDL701258858-1-3f9b8.webp">
+            </div>
+            <div class="productsText">
+                <p style="
+                font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 18px;
+                
+                color: rgb(153, 153, 153)">UNIBLESS Sendha Namak <br>Rock Salt 1 kg</p>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #e9e9e9;"></i>
+                <div class="price">
+                    <p class="cut" style="font-size: 13px;
+
+                    font-weight: 400;
+                   
+                   line-height: 13px;
+                   
+                   color: rgb(204, 204, 204)">RS 240</p>
+                    <p style="padding-left: 4px; font-size: 13px;
+
+                    font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(51, 51, 51)">Rs 135</p>
+                    <button style="font-size: 10px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    background-color: rgb(153, 153, 153);">44% OFF</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------product3--------------------------->
+
+
+    <div id="product_Main">
+        <!----------------------img1------------------------------>
+
+
+        <div class="products">
+            <div class="productsImg">
+
+              <a href="individualProduct.html" style="text-decoration: none;">
+                <img src="https://n1h2.sdlcdn.com/imgs/b/x/0/large/Heaven-D-cor-Metal-Laxmi-SDL709086684-1-abe57.webp">
+            </div>
+            <div class="productsText">
+                <p style="
+                font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 18px;
+                
+                color: rgb(153, 153, 153)">Heaven Decor Brass <br> Laxmi Ganesha idol</p>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #e9e9e9;"></i>
+                <div class="price">
+                    <p class="cut" style="font-size: 13px;
+
+                     font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(204, 204, 204)">RS 699</p>
+                    <p style="padding-left: 4px; font-size: 13px;
+
+                    font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(51, 51, 51)">Rs 159</p>
+                    <button style="font-size: 10px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    background-color: rgb(153, 153, 153);">77% OFF</button>
+                </div>
+            </div>
+
+          </a>
+        </div>
+
+        <!----------------------img2------------------------------>
+
+
+        <div class="products">
+            <div class="productsImg">
+                <img src="https://n1h2.sdlcdn.com/imgs/i/1/n/large/1-e36c1.webp">
+            </div>
+            <div class="productsText">
+                <p style="
+                font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 18px;
+                
+                color: rgb(153, 153, 153)">Dust Anti Pollution Sun <br>Cool Wiind winter...</p>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #e9e9e9;"></i>
+                <div class="price">
+                    <p class="cut" style="font-size: 13px;
+
+                    font-weight: 400;
+                   
+                   line-height: 13px;
+                   
+                   color: rgb(204, 204, 204)">RS 599</p>
+                    <p style="padding-left: 4px; font-size: 13px;
+
+                    font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(51, 51, 51)">Rs 189</p>
+                    <button style="font-size: 10px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    background-color: rgb(153, 153, 153);">68% OFF</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------------img3------------------------------>
+
+
+        <div class="products">
+            <div class="productsImg">
+                <img src="https://n1h2.sdlcdn.com/imgs/j/p/o/large/Small-Sun-500-Meter-4-SDL284324424-1-5a68b.webp">
+            </div>
+            <div class="productsText">
+                <p style="
+                font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 18px;
+                
+                color: rgb(153, 153, 153)">Small Sun 500 Meter 4<br>Mode Zoomable...</p>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #e9e9e9;"></i>
+                <div class="price">
+                    <p class="cut" style="font-size: 13px;
+
+                    font-weight: 400;
+                   
+                   line-height: 13px;
+                   
+                   color: rgb(204, 204, 204)">RS 1,199</p>
+                    <p style="padding-left: 4px; font-size: 13px;
+
+                    font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(51, 51, 51)">Rs 229</p>
+                    <button style="font-size: 10px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    background-color: rgb(153, 153, 153);">81% OFF</button>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------img4------------------------------>
+
+
+        <div class="products">
+            <div class="productsImg">
+                <img
+                    src=" https://n1h2.sdlcdn.com/imgs/j/s/t/large/Bucik-Black-Leather-Slippers-SDL937743038-1-28a8e.webp">
+            </div>
+            <div class="productsText">
+                <p style="
+                font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 18px;
+                
+                color: rgb(153, 153, 153)">Bucik Black Leather <br>Slippers</p>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #e9e9e9;"></i>
+                <div class="price">
+                    <p class="cut" style="font-size: 13px;
+
+                    font-weight: 400;
+                   
+                   line-height: 13px;
+                   
+                   color: rgb(204, 204, 204)">RS 1,999</p>
+                    <p style="padding-left: 4px; font-size: 13px;
+
+                    font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(51, 51, 51)">Rs 489</p>
+                    <button style="font-size: 10px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    background-color: rgb(153, 153, 153);">76% OFF</button>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------img5------------------------------>
+
+
+        <div class="products">
+            <div class="productsImg">
+                <img src=" https://n1h2.sdlcdn.com/imgs/j/n/5/large/A-M-E-7-Pcs-SDL068064905-1-ffc8a.webp">
+            </div>
+            <div class="productsText">
+                <p style="
+                font-size: 13px;
+
+                font-weight: 400;
+                
+                line-height: 18px;
+                
+                color: rgb(153, 153, 153)">A M E (7 Pcs ) Wooden <br>Serving Spoon Sheesa...</p>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #ffc315;"></i>
+                <i class="fas fa-star" style="color: #e9e9e9;"></i>
+                <div class="price">
+                    <p class="cut" style="font-size: 13px;
+
+                    font-weight: 400;
+                   
+                   line-height: 13px;
+                   
+                   color: rgb(204, 204, 204)">RS 649</p>
+                    <p style="padding-left: 4px; font-size: 13px;
+
+                    font-weight: 400;
+                    
+                    line-height: 13px;
+                    
+                    color: rgb(51, 51, 51)">Rs 189</p>
+                    <button style="font-size: 10px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    background-color: rgb(153, 153, 153);">71% OFF</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="empty"></div> -->
+
+
+    </div>
+
+    <!-------------------------product 4-------------------------------->
+
+
+    <div id="product_4">
+        <div id="empty"></div>
+    </div>
+
+
+
+    <!-------------------------------load button--------------------------->
+
+    <div id="load">
+        <button id="btn">Load More</button>
+    </div>
+
+    <!------------------------------playstore---------------------->
+
+
+
+    <div id="playstore">
+
+        <div class="playstoreLeft">
+            <img src="image/snap9.jpeg">
+        </div>
+        <div class="playstoreright">
+            <div class="playLeft">
+                <h1 style="
+                font-size: 40.4px;
+
+                font-weight: 700;
+                
+                line-height: 53.732px;
+                
+                color: rgb(34, 34, 34)">Download<br>Snapdeal App Now</h1>
+
+                <p style="
+                font-size: 17.6px;
+
+                font-weight: 400;
+                
+                line-height: 32.384px;
+                
+                color: rgb(119, 119, 119)">Fast, Simple & Delightful. <br> All it takes is 30 seconds to Download.</p>
+                <button style="background-color: #050708;"><i class="fab fa-apple"></i><span style="color: b7b8b8;">
+                        Download on the <br></span>
+                    App
+                    Store</button>
+                <button style="background-color: #231f20;"><i class="fab fa-google-play"></i> Avaible on the <br>Play
+                    Store</button>
+            </div>
+
+
+            <div class="playRight">
+
+                <img src="image/snap11.jpeg" style="height: 190px; width: 100px;">+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+   <!-- Product page finish -->
+
+   <!-- Footer page Start  -->
+
+
+   <div id="productFooter">
+    <div id="main">
+
+      <div id="footer">
+          <div class="Div" style="margin-left: 10px;">
+              <div class="inside" style="margin-right: 0;">
+                  <img src="image/snap1.jpeg">
+                  <h4>100% SECURE PAYMENTS</h4>
+
+                  <p>Moving your card details to much <br> more <br>secured place</p>
+              </div>
+
+          </div>
+          <div class="Div">
+              <div class="inside" style="margin-left: 0px;">
+                  <img src="image/snap4.jpeg">
+                  <h4>TRUSTPAY</h4>
+
+                  <p>100% Payment Protection.Easy<br>Return policy</p>
+              </div>
+
+          </div>
+          <div class="Div">
+              <div class="inside">
+                  <img src="image/snap2.jpeg">
+                  <h4>HELP CENTER</h4>
+
+                  <p>Got a question? Look no further. <br>Browse our FAQs or submit <br> your query here.</p>
+              </div>
+
+          </div>
+          <div class="Div">
+              <div class="inside">
+                  <img src="image/snap3.jpeg">
+                  <h4>SHOP ON THE GO</h4>
+
+                  <p>Download the app and get exciting<br>app only offers at your fingertips</p>
+              </div>
+
+          </div>
+      </div>
+
+      <hr>
+
+      <!---------footer Next------------------->
+      <div class="ft_2">
+          <div class="ft_2Div1">
+              <div class="ft_2inside">
+                  <h4>POLICY INFO</h4>
+                  <h5 id="under">Privacy Policy</h5>
+                  <h5 id="under">Terms of Sale</h5>
+                  <h5>Terms of use</h5>
+                  <h5>Report Abuse & Takedown Policy</h5>
+
+              </div>
+
+              <div class="ft_2inside">
+                  <h4>COMPANY</h4>
+                  <h5>About Us</h5>
+                  <h5>Impact@Snapdeal</h5>
+                  <h5>Core Values</h5>
+                  <h5>Careers</h5>
+                  <h5>Blog</h5>
+                  <h5>sitemap</h5>
+
+              </div>
+
+              <div class="ft_2inside">
+                  <h4>SNAPDEAL BUSINESS</h4>
+                  <h5>shopping App</h5>
+                  <h5>Sell on Snapdeal</h5>
+                  <h5>Advertise on Snapdeal</h5>
+                  <h5>Media Enquiries</h5>
+                  <h5>Be an Affiliate</h5>
+
+              </div>
+
+
+              <div class="ft_2inside" style="padding-left: 5px;">
+                  <h4>NEED HELP?</h4>
+                  <h5>FAQ</h5>
+                  <h5>Contact Us</h5>
+                  <h5>Online Shopping</h5>
+
+
+              </div>
+
+
+
+
+          </div>
+          <div class="ft_2Div2">
+              <h4>SUBSCRIBE</h4>
+              <div id="btnu">
+                  <input id="email" type="text" placeholder="Your email address">
+                  <button onclick="checkemail()">SUBSCRIBE</button>
+                  <p id="valid" style="color: red; padding-top: 0;"></p>
+
+              </div>
+
+              <div id="btnl">
+                  <p>Register now to get updates on promotions and coupons. <span>Or Download App</span> </p>
+
+              </div>
+
+          </div>
+
+      </div>
+      <hr>
+
+
+      <!-----------------------footer Last------------------------->
+
+
+      <div id="ft_2Last">
+
+          <div class="ft_Lastleft">
+              <h3>PAYMENT</h3>
+              <div class="pay">
+                  <img src="image/snap5.jpeg">
+                  <img src="image/snap6.jpeg">
+                  <img src="image/snap7.jpeg">
+                  <img src="image/snap8.jpeg">
+                  <div style="display: flex; margin-top: 15px;">
+                      <div><i class="fas fa-rupee-sign"></i></div>
+                      <div>
+                          <h6 style="padding-left: 5px;"> Cash on<br> Delivery </h6>
+                      </div>
+
+                      <div style="margin-left: 10px;"><i class="fas fa-rupee-sign"></i></div>
+                      <div>
+                          <h6 style="padding-left: 5px;"> Net<br> Banking</h6>
+                      </div>
+                  </div>
+                  <!-- <button>  Cash on Delivery </button>
+                  <button></button> -->
+              </div>
+          </div>
+
+          <!------------------------social------------------------------>
+
+
+
+          <div class="ft_Lastright">
+              <h3 style="padding-left: 10px; padding-top: 10px;">CONNECT</h3>
+              <div class="social">
+                  <a href="https://www.facebook.com/Snapdeal">
+                      <i class="fa fa-facebook" style="
+                  font-size:30px;
+
+                  font-weight:400;
+
+                  line-height: 20px;
+
+                  color: rgb(57, 87, 154);"></i>
+
+                  </a>
+
+                  <a href="https://twitter.com/snapdeal"> <i class="fa fa-twitter" style="
+                      font-size: 30px;
+  
+                      font-weight: 400;
+  
+                      line-height: 20px;
+  
+                      color: rgb(5, 159, 245);"></i></a>
+
+
+                  <a href="https://www.youtube.com/user/snapdeal"><i class="fa fa-youtube-play" style="
+                      font-size: 30px;
+  
+                      font-weight: 400;
+  
+                      line-height: 20px;
+  
+                       color: rgb(233, 29, 0)"></i></a>
+
+                  <a href="https://www.instagram.com/snapdeal/?hl=en"> <i class="fa fa-instagram" style=" 
+                      font-size: 30px;
+  
+                      font-weight: 400;
+  
+                      line-height: 20px;
+  
+                       color: rgb(24, 139, 233)"></i></a>
+
+                  <a href="https://www.pinterest.com/snapdeal/">
+                      <i class="fa fa-pinterest" style=" 
+                      font-size: 30px;
+
+                          font-weight: 400;
+
+                       line-height: 20px;
+
+                      color: rgb(189, 9, 28)"></i>
+                  </a>
+
+              </div>
+          </div>
+      </div>
+
+
+  </div>
+   </div>
+
+
+    <!-- footer page finish -->
+  </body>
+</html>
+
+<script src="product.js"></script>
