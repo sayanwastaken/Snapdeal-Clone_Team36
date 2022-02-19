@@ -98,11 +98,10 @@ var signName= JSON.parse(localStorage.getItem("userName"))||[];
 
 function bat(){
   // window.location.href="signin.html"
-console.log(signName)
-document.getElementById("signbtn").innerText=""
+
 
 document.getElementById("signbtn").innerText=signName
-
+window.location.href="signin.html"
   
   
 }
