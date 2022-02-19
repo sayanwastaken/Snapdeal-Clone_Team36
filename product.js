@@ -103,7 +103,7 @@ document.getElementById("signbtn").innerText=""
 
 document.getElementById("signbtn").innerText=signName
 
-  
+  window.location.href="signin.html"
   
 }
 
