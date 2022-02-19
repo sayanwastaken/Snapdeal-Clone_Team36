@@ -97,12 +97,12 @@ var signName= JSON.parse(localStorage.getItem("userName"))||[];
 
 
 function bat(){
-  // window.location.href="signin.html"
-
 
 document.getElementById("signbtn").innerText=signName
+
 window.location.href="signin.html"
-  
+
+obj="yo"
   
 }
 
