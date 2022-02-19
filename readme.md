@@ -40,7 +40,7 @@ Snapdeal is one such platform that makes online shopping a boom with its exclusi
     <li>Clone my repository https://github.com/sayanwastaken/Snapdeal-Clone_Team36b </li>
     <li>Open that code in your VSCode Editor</li>
     <li>Install Live Server extension</li>
-    <li>Open Index.html<li>
+    <li>Open Index.html</li>
     <li>And Open with live server</li>
     <li>Then Enjoy</li>
     <li>Thats all !</li>
